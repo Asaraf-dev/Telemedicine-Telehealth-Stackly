@@ -1,0 +1,756 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Telemedicine & Telehealth</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Main favicon -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- webp favicons -->
+    <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+    <!-- Android -->
+    <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--- Bootstrap Icon --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!--- Loader Start --->
+    <div class="tt-ldr-loader" id="ttLdrLoader" aria-label="Loading page" role="status">
+        <div class="tt-ldr-background">
+            <span class="tt-ldr-orb tt-ldr-orb-one"></span>
+            <span class="tt-ldr-orb tt-ldr-orb-two"></span>
+            <span class="tt-ldr-orb tt-ldr-orb-three"></span>
+        </div>
+        <div class="tt-ldr-content">
+            <!--- Loader Logo --->
+            <div class="tt-ldr-logo-wrap">
+                <div class="tt-ldr-logo-ring"></div>
+                <div class="tt-ldr-logo">
+                    <i class="bi bi-heart-pulse-fill"></i>
+                </div>
+                <span class="tt-ldr-pulse tt-ldr-pulse-one"></span>
+                <span class="tt-ldr-pulse tt-ldr-pulse-two"></span>
+            </div>
+            <!--- Brand Name --->
+            <div class="tt-ldr-brand">
+                <span class="tt-ldr-brand-name">STACKLY</span>
+                <span class="tt-ldr-brand-tagline">TELEMEDICINE & HEALTHCARE</span>
+            </div>
+            <!--- Loading Animation --->
+            <div class="tt-ldr-animation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!--- Loading Message --->
+            <p class="tt-ldr-message" id="ttLdrMessage">Preparing your healthcare experience...</p>
+        </div>
+        <div class="tt-ldr-bottom">
+            <i class="bi bi-shield-check"></i>
+            <span>Your healthcare journey starts here</span>
+        </div>
+    </div>
+    <!--- Loader End --->
+
+    <div id="navbar"></div>
+
+    <!--- Hero Section Start --->
+    <section class="tt-home-hero">
+        <div class="tt-home-hero-bg">
+            <span class="tt-home-hero-orb tt-home-hero-orb-one"></span>
+            <span class="tt-home-hero-orb tt-home-hero-orb-two"></span>
+            <span class="tt-home-hero-circle"></span>
+        </div>
+        <div class="container tt-home-hero-container">
+            <div class="row align-items-center">
+                <!--- Hero Content --->
+                <div class="col-lg-6">
+                    <div class="tt-home-hero-content">
+                        <div class="tt-home-hero-badge">
+                            <span class="tt-home-hero-badge-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+                            <span>Healthcare, Made More Accessible</span>
+                        </div>
+                        <h1>Better Healthcare.<br><span>Closer to You.</span></h1>
+                        <p class="tt-home-hero-description">Connect with trusted healthcare professionals, get expert
+                            medical guidance, and access convenient online consultations from wherever life takes you.
+                        </p>
+                        <!--- Hero Actions --->
+                        <div class="tt-home-hero-actions">
+                            <a href="404.html" class="tt-home-hero-primary-btn">
+                                <i class="bi bi-calendar2-check"></i>
+                                <span>Find a Doctor</span>
+                                <i class="bi bi-arrow-up-right tt-home-hero-btn-arrow"></i>
+                            </a>
+                            <a href="404.html" class="tt-home-hero-secondary-btn">
+                                <i class="bi bi-play-circle"></i>
+                                <span>How It Works</span>
+                            </a>
+                        </div>
+                        <!--- Hero Trust Indicators --->
+                        <div class="tt-home-hero-trust">
+                            <div class="tt-home-hero-trust-item">
+                                <span class="tt-home-hero-trust-icon"><i class="bi bi-person-check"></i></span>
+                                <div><strong>Qualified</strong><small>Doctors</small></div>
+                            </div>
+                            <span class="tt-home-hero-trust-divider"></span>
+                            <div class="tt-home-hero-trust-item">
+                                <span class="tt-home-hero-trust-icon"><i class="bi bi-clock-history"></i></span>
+                                <div><strong>Flexible</strong><small>Appointments</small></div>
+                            </div>
+                            <span class="tt-home-hero-trust-divider"></span>
+                            <div class="tt-home-hero-trust-item">
+                                <span class="tt-home-hero-trust-icon"><i class="bi bi-shield-check"></i></span>
+                                <div><strong>Carefully</strong><small>Designed Care</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- Hero Visual --->
+                <div class="col-lg-6">
+                    <div class="tt-home-hero-visual">
+                        <div class="tt-home-hero-image-bg"></div>
+                        <div class="tt-home-hero-image-wrap">
+                            <img src="assets/images/hero-doctor.webp"
+                                alt="Doctor ready to provide online healthcare consultation" class="tt-home-hero-image">
+                        </div>
+                        <!--- Floating Consultation Card --->
+                        <div class="tt-home-hero-card tt-home-hero-card-top">
+                            <span class="tt-home-hero-card-icon"><i class="bi bi-camera-video-fill"></i></span>
+                            <div><strong>Online Consultations</strong><small>Connect with a doctor</small></div>
+                        </div>
+                        <!--- Floating Doctor Card --->
+                        <div class="tt-home-hero-card tt-home-hero-card-bottom">
+                            <span class="tt-home-hero-card-icon"><i class="bi bi-calendar2-heart"></i></span>
+                            <div><strong>Easy Appointments</strong><small>Choose a convenient time</small></div>
+                        </div>
+                        <!--- Floating Decorative Icons --->
+                        <span class="tt-home-hero-decor tt-home-hero-decor-one"><i class="bi bi-plus-lg"></i></span>
+                        <span class="tt-home-hero-decor tt-home-hero-decor-two"><i class="bi bi-heart-pulse"></i></span>
+                        <span class="tt-home-hero-image-dot"></span>
+                    </div>
+                </div>
+            </div>
+            <!--- Hero Feature Strip --->
+            <div class="tt-home-hero-features">
+                <div class="tt-home-hero-feature">
+                    <span class="tt-home-hero-feature-icon"><i class="bi bi-camera-video"></i></span>
+                    <div><strong>Video Consultations</strong><small>Connect with doctors online</small></div>
+                </div>
+                <div class="tt-home-hero-feature">
+                    <span class="tt-home-hero-feature-icon"><i class="bi bi-calendar-check"></i></span>
+                    <div><strong>Simple Booking</strong><small>Convenient appointment access</small></div>
+                </div>
+                <div class="tt-home-hero-feature">
+                    <span class="tt-home-hero-feature-icon"><i class="bi bi-file-earmark-medical"></i></span>
+                    <div><strong>Digital Health</strong><small>Access your health information</small></div>
+                </div>
+                <div class="tt-home-hero-feature">
+                    <span class="tt-home-hero-feature-icon"><i class="bi bi-shield-lock"></i></span>
+                    <div><strong>Privacy Focused</strong><small>Designed with care and privacy</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--- Hero Section End --->
+
+    <!--- Specialties Section Start --->
+    <section class="tt-home-specialties" id="specialties">
+        <div class="container">
+
+            <!--- Section Header --->
+            <div class="tt-home-specialties-header">
+                <div class="tt-home-specialties-heading">
+                    <span class="tt-home-specialties-tag">
+                        <i class="bi bi-heart-pulse"></i>
+                        EXPLORE SPECIALTIES
+                    </span>
+                    <h2>Healthcare for Every <span>Need</span></h2>
+                    <p>Explore a range of medical specialties and find the right care for your health and wellbeing.</p>
+                </div>
+                <a href="404.html" class="tt-home-specialties-view">
+                    View All Specialties
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
+
+            <!--- Specialties Grid --->
+            <div class="row g-4">
+
+                <!--- Card 1 --->
+                <div class="col-xl-4 col-md-6">
+                    <a class="tt-home-specialty-card">
+                        <div class="tt-home-specialty-icon">
+                            <i class="bi bi-heart-pulse"></i>
+                        </div>
+                        <div class="tt-home-specialty-content">
+                            <h3>General Medicine</h3>
+                            <p>Everyday health concerns, routine checkups and primary healthcare guidance.</p>
+                            <span class="tt-home-specialty-link">Explore Specialty <i
+                                    class="bi bi-arrow-right"></i></span>
+                        </div>
+                        <span class="tt-home-specialty-number">01</span>
+                    </a>
+                </div>
+
+                <!--- Card 2 --->
+                <div class="col-xl-4 col-md-6">
+                    <a class="tt-home-specialty-card">
+                        <div class="tt-home-specialty-icon">
+                            <i class="bi bi-activity"></i>
+                        </div>
+                        <div class="tt-home-specialty-content">
+                            <h3>Cardiology</h3>
+                            <p>Heart health, cardiovascular concerns and specialist guidance.</p>
+                            <span class="tt-home-specialty-link">Explore Specialty <i
+                                    class="bi bi-arrow-right"></i></span>
+                        </div>
+                        <span class="tt-home-specialty-number">02</span>
+                    </a>
+                </div>
+
+                <!--- Card 3 --->
+                <div class="col-xl-4 col-md-6">
+                    <a class="tt-home-specialty-card">
+                        <div class="tt-home-specialty-icon">
+                            <i class="bi bi-person-hearts"></i>
+                        </div>
+                        <div class="tt-home-specialty-content">
+                            <h3>Dermatology</h3>
+                            <p>Care and guidance for skin, hair and related conditions.</p>
+                            <span class="tt-home-specialty-link">Explore Specialty <i
+                                    class="bi bi-arrow-right"></i></span>
+                        </div>
+                        <span class="tt-home-specialty-number">03</span>
+                    </a>
+                </div>
+
+                <!--- Card 4 --->
+                <div class="col-xl-4 col-md-6">
+                    <a class="tt-home-specialty-card">
+                        <div class="tt-home-specialty-icon">
+                            <i class="bi bi-balloon-heart"></i>
+                        </div>
+                        <div class="tt-home-specialty-content">
+                            <h3>Pediatrics</h3>
+                            <p>Healthcare guidance focused on children's growth and wellbeing.</p>
+                            <span class="tt-home-specialty-link">Explore Specialty <i
+                                    class="bi bi-arrow-right"></i></span>
+                        </div>
+                        <span class="tt-home-specialty-number">04</span>
+                    </a>
+                </div>
+
+                <!--- Card 5 --->
+                <div class="col-xl-4 col-md-6">
+                    <a class="tt-home-specialty-card">
+                        <div class="tt-home-specialty-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div class="tt-home-specialty-content">
+                            <h3>Neurology</h3>
+                            <p>Specialist guidance for brain, nerve and neurological concerns.</p>
+                            <span class="tt-home-specialty-link">Explore Specialty <i
+                                    class="bi bi-arrow-right"></i></span>
+                        </div>
+                        <span class="tt-home-specialty-number">05</span>
+                    </a>
+                </div>
+
+                <!--- Card 6 --->
+                <div class="col-xl-4 col-md-6">
+                    <a class="tt-home-specialty-card">
+                        <div class="tt-home-specialty-icon">
+                            <i class="bi bi-bandaid"></i>
+                        </div>
+                        <div class="tt-home-specialty-content">
+                            <h3>Orthopedics</h3>
+                            <p>Bone, joint, muscle and mobility-related healthcare guidance.</p>
+                            <span class="tt-home-specialty-link">Explore Specialty <i
+                                    class="bi bi-arrow-right"></i></span>
+                        </div>
+                        <span class="tt-home-specialty-number">06</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--- Specialties Section End --->
+
+    <!--- About Section Start --->
+    <section class="tt-home-about" id="about">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <!--- About Image --->
+                <div class="col-lg-6">
+                    <div class="tt-home-about-image">
+                        <img src="assets/images/about-healthcare.webp"
+                            alt="Healthcare professional providing patient care">
+                        <div class="tt-home-about-image-badge">
+                            <i class="bi bi-heart-pulse"></i>
+                            <div>
+                                <h4>Care That Matters</h4>
+                                <span>Focused on your wellbeing</span>
+                            </div>
+                        </div>
+                        <div class="tt-home-about-image-shape"></div>
+                    </div>
+                </div>
+
+                <!--- About Content --->
+                <div class="col-lg-6">
+                    <div class="tt-home-about-content">
+                        <span class="tt-home-about-tag">
+                            <i class="bi bi-plus-circle"></i>
+                            ABOUT STACKLY
+                        </span>
+
+                        <h2>Making Healthcare More <span>Accessible</span></h2>
+
+                        <p class="tt-home-about-description">
+                            At Stackly, we believe accessing healthcare should feel simple and convenient. Our
+                            telehealth platform brings patients and healthcare professionals closer through an
+                            easy-to-use digital experience.
+                        </p>
+
+                        <p class="tt-home-about-description">
+                            From exploring medical specialties to discovering healthcare professionals, we're focused on
+                            making your healthcare journey easier to navigate.
+                        </p>
+
+                        <!--- About Features --->
+                        <div class="tt-home-about-features">
+                            <div class="tt-home-about-feature">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Simple Digital Experience</span>
+                            </div>
+                            <div class="tt-home-about-feature">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Multiple Medical Specialties</span>
+                            </div>
+                            <div class="tt-home-about-feature">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Patient-Focused Approach</span>
+                            </div>
+                            <div class="tt-home-about-feature">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Convenient Healthcare Discovery</span>
+                            </div>
+                        </div>
+
+                        <a href="404.html" class="tt-home-about-btn">
+                            Discover More
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--- About Section End --->
+
+    <!--- Our Services Section Start --->
+    <section class="tt-home-services" id="services">
+        <div class="container">
+
+            <!--- Section Header --->
+            <div class="tt-home-services-header">
+                <span class="tt-home-services-tag">
+                    <i class="bi bi-grid"></i>
+                    WHAT WE OFFER
+                </span>
+                <h2>Healthcare Services Made <span>Simpler</span></h2>
+                <p>Explore convenient digital healthcare services designed to make your healthcare journey easier.</p>
+            </div>
+
+            <!--- Services Grid --->
+            <div class="row g-4">
+
+                <!--- Service 1 --->
+                <div class="col-xl-4 col-md-6">
+                    <div class="tt-home-service-card">
+                        <div class="tt-home-service-icon">
+                            <i class="bi bi-camera-video"></i>
+                        </div>
+                        <h3>Online Consultations</h3>
+                        <p>Explore options for connecting with healthcare professionals through digital consultation
+                            services.</p>
+                        <a href="404.html" class="tt-home-service-link">
+                            Learn More <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <span class="tt-home-service-number">01</span>
+                    </div>
+                </div>
+
+                <!--- Service 2 --->
+                <div class="col-xl-4 col-md-6">
+                    <div class="tt-home-service-card">
+                        <div class="tt-home-service-icon">
+                            <i class="bi bi-calendar2-check"></i>
+                        </div>
+                        <h3>Appointment Booking</h3>
+                        <p>Discover a simple way to explore healthcare professionals and manage appointment requests.
+                        </p>
+                        <a href="404.html" class="tt-home-service-link">
+                            Learn More <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <span class="tt-home-service-number">02</span>
+                    </div>
+                </div>
+
+                <!--- Service 3 --->
+                <div class="col-xl-4 col-md-6">
+                    <div class="tt-home-service-card">
+                        <div class="tt-home-service-icon">
+                            <i class="bi bi-person-lines-fill"></i>
+                        </div>
+                        <h3>Doctor Discovery</h3>
+                        <p>Browse healthcare professional profiles, specialties and available information in one place.
+                        </p>
+                        <a href="404.html" class="tt-home-service-link">
+                            Learn More <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <span class="tt-home-service-number">03</span>
+                    </div>
+                </div>
+
+                <!--- Service 4 --->
+                <div class="col-xl-4 col-md-6">
+                    <div class="tt-home-service-card">
+                        <div class="tt-home-service-icon">
+                            <i class="bi bi-file-earmark-medical"></i>
+                        </div>
+                        <h3>Health Records</h3>
+                        <p>Explore a dedicated space for organizing and accessing personal health information.</p>
+                        <a href="404.html" class="tt-home-service-link">
+                            Learn More <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <span class="tt-home-service-number">04</span>
+                    </div>
+                </div>
+
+                <!--- Service 5 --->
+                <div class="col-xl-4 col-md-6">
+                    <div class="tt-home-service-card">
+                        <div class="tt-home-service-icon">
+                            <i class="bi bi-capsule"></i>
+                        </div>
+                        <h3>Prescription Management</h3>
+                        <p>Explore a convenient interface for viewing and organizing prescription-related information.
+                        </p>
+                        <a href="404.html" class="tt-home-service-link">
+                            Learn More <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <span class="tt-home-service-number">05</span>
+                    </div>
+                </div>
+
+                <!--- Service 6 --->
+                <div class="col-xl-4 col-md-6">
+                    <div class="tt-home-service-card">
+                        <div class="tt-home-service-icon">
+                            <i class="bi bi-bell"></i>
+                        </div>
+                        <h3>Health Reminders</h3>
+                        <p>Keep track of important healthcare activities with a simple reminder experience.</p>
+                        <a href="404.html" class="tt-home-service-link">
+                            Learn More <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <span class="tt-home-service-number">06</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--- Services Bottom CTA --->
+            <div class="tt-home-services-bottom">
+                <p>Discover more ways to simplify your healthcare journey.</p>
+                <a href="404.html">
+                    Explore All Services
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!--- Our Services Section End --->
+
+    <!--- Why Choose Stackly Section Start --->
+    <section class="tt-home-why" id="why-stackly">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <!--- Why Choose Image --->
+                <div class="col-lg-5">
+                    <div class="tt-home-why-visual">
+                        <div class="tt-home-why-image">
+                            <img src="assets/images/why-stackly.webp" alt="Modern digital healthcare experience">
+                        </div>
+
+                        <div class="tt-home-why-floating">
+                            <div class="tt-home-why-floating-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <div>
+                                <h4>Designed Around You</h4>
+                                <p>A simpler healthcare journey</p>
+                            </div>
+                        </div>
+
+                        <div class="tt-home-why-decoration"></div>
+                    </div>
+                </div>
+
+                <!--- Why Choose Content --->
+                <div class="col-lg-7">
+                    <div class="tt-home-why-content">
+                        <span class="tt-home-why-tag">
+                            <i class="bi bi-stars"></i>
+                            WHY CHOOSE STACKLY
+                        </span>
+
+                        <h2>A Better Way to Navigate Your <span>Healthcare</span></h2>
+
+                        <p class="tt-home-why-description">
+                            Healthcare should be easier to explore and manage. Stackly brings useful digital healthcare
+                            experiences together in one simple, accessible platform.
+                        </p>
+
+                        <!--- Why Choose Features --->
+                        <div class="tt-home-why-list">
+
+                            <div class="tt-home-why-item">
+                                <div class="tt-home-why-icon">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <h3>Simple & Easy to Use</h3>
+                                    <p>Explore healthcare information through a clear and user-friendly experience.</p>
+                                </div>
+                            </div>
+
+                            <div class="tt-home-why-item">
+                                <div class="tt-home-why-icon">
+                                    <i class="bi bi-grid"></i>
+                                </div>
+                                <div>
+                                    <h3>Multiple Specialties</h3>
+                                    <p>Discover different medical specialties and healthcare professionals in one place.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="tt-home-why-item">
+                                <div class="tt-home-why-icon">
+                                    <i class="bi bi-calendar-check"></i>
+                                </div>
+                                <div>
+                                    <h3>Convenient Experience</h3>
+                                    <p>Navigate healthcare-related information and appointment options with ease.</p>
+                                </div>
+                            </div>
+
+                            <div class="tt-home-why-item">
+                                <div class="tt-home-why-icon">
+                                    <i class="bi bi-person-heart"></i>
+                                </div>
+                                <div>
+                                    <h3>Patient-Focused Approach</h3>
+                                    <p>Designed to make the digital healthcare journey more comfortable and accessible.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="404.html" class="tt-home-why-btn">
+                            Know More About Us
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--- Why Choose Stackly Section End --->
+
+    <!--- Patient Testimonials Section Start --->
+    <section class="tt-home-testimonials" id="testimonials">
+        <div class="container">
+
+            <!--- Section Header --->
+            <div class="tt-home-testimonials-header">
+                <span class="tt-home-testimonials-tag">
+                    <i class="bi bi-chat-heart"></i>
+                    PATIENT EXPERIENCES
+                </span>
+                <h2>Stories That Inspire <span>Better Care</span></h2>
+                <p>Discover how a simple and accessible healthcare experience can make a difference.</p>
+            </div>
+
+            <!--- Testimonials Grid --->
+            <div class="row g-4">
+
+                <!--- Testimonial 1 --->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tt-home-testimonial-card">
+                        <div class="tt-home-testimonial-top">
+                            <div class="tt-home-testimonial-quote">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="tt-home-testimonial-stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+
+                        <p class="tt-home-testimonial-text">
+                            "The platform feels simple and easy to navigate. Finding healthcare information and
+                            exploring different specialties is a smooth experience."
+                        </p>
+
+                        <div class="tt-home-testimonial-user">
+                            <img src="assets/images/client-2.webp" alt="Sample patient profile">
+                            <div>
+                                <h3>Emily Johnson</h3>
+                                <span>Sample Patient</span>
+                            </div>
+                            <i class="bi bi-patch-check-fill tt-home-testimonial-check" title="Sample profile"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Testimonial 2 --->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tt-home-testimonial-card tt-home-testimonial-featured">
+                        <div class="tt-home-testimonial-top">
+                            <div class="tt-home-testimonial-quote">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="tt-home-testimonial-stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+
+                        <p class="tt-home-testimonial-text">
+                            "I like how everything is organized in one place. The clean design makes exploring
+                            healthcare options feel much more convenient."
+                        </p>
+
+                        <div class="tt-home-testimonial-user">
+                            <img src="assets/images/client-1.webp" alt="Sample patient profile">
+                            <div>
+                                <h3>Michael Anderson</h3>
+                                <span>Sample Patient</span>
+                            </div>
+                            <i class="bi bi-patch-check-fill tt-home-testimonial-check" title="Sample profile"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Testimonial 3 --->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tt-home-testimonial-card">
+                        <div class="tt-home-testimonial-top">
+                            <div class="tt-home-testimonial-quote">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="tt-home-testimonial-stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+
+                        <p class="tt-home-testimonial-text">
+                            "A well-organized digital experience with a clear layout. It is easy to explore medical
+                            specialties and understand the available options."
+                        </p>
+
+                        <div class="tt-home-testimonial-user">
+                            <img src="assets/images/client-5.webp" alt="Sample patient profile">
+                            <div>
+                                <h3>Sophia Williams</h3>
+                                <span>Sample Patient</span>
+                            </div>
+                            <i class="bi bi-patch-check-fill tt-home-testimonial-check" title="Sample profile"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--- Testimonials Bottom --->
+            <div class="tt-home-testimonials-bottom">
+                <span>Building a better digital healthcare experience.</span>
+                <a href="404.html">
+                    Get in Touch
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!--- Patient Testimonials Section End --->
+
+
+    <div id="footer"></div>
+
+    <!--- Js Files --->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/footer.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

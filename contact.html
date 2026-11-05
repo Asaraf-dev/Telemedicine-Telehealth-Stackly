@@ -1,0 +1,535 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Telemedicine & Telehealth</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Main favicon -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- webp favicons -->
+    <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+    <!-- Android -->
+    <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--- Bootstrap Icon --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!--- Loader Start --->
+    <div class="tt-ldr-loader" id="ttLdrLoader" aria-label="Loading page" role="status">
+        <div class="tt-ldr-background">
+            <span class="tt-ldr-orb tt-ldr-orb-one"></span>
+            <span class="tt-ldr-orb tt-ldr-orb-two"></span>
+            <span class="tt-ldr-orb tt-ldr-orb-three"></span>
+        </div>
+        <div class="tt-ldr-content">
+            <!--- Loader Logo --->
+            <div class="tt-ldr-logo-wrap">
+                <div class="tt-ldr-logo-ring"></div>
+                <div class="tt-ldr-logo">
+                    <i class="bi bi-heart-pulse-fill"></i>
+                </div>
+                <span class="tt-ldr-pulse tt-ldr-pulse-one"></span>
+                <span class="tt-ldr-pulse tt-ldr-pulse-two"></span>
+            </div>
+            <!--- Brand Name --->
+            <div class="tt-ldr-brand">
+                <span class="tt-ldr-brand-name">STACKLY</span>
+                <span class="tt-ldr-brand-tagline">TELEMEDICINE & HEALTHCARE</span>
+            </div>
+            <!--- Loading Animation --->
+            <div class="tt-ldr-animation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!--- Loading Message --->
+            <p class="tt-ldr-message" id="ttLdrMessage">Preparing your healthcare experience...</p>
+        </div>
+        <div class="tt-ldr-bottom">
+            <i class="bi bi-shield-check"></i>
+            <span>Your healthcare journey starts here</span>
+        </div>
+    </div>
+    <!--- Loader End --->
+
+    <div id="navbar"></div>
+
+    <!--- Inner Hero Component --->
+    <div id="innerHeroContainer"></div>
+
+    <!--- Contact Information Section Start --->
+    <section class="tt-contact-info" id="contact-information">
+        <div class="container">
+            <div class="tt-contact-info-heading">
+                <span class="tt-contact-info-eyebrow">GET IN TOUCH</span>
+                <h2>We're Here to <span>Help You.</span></h2>
+                <p>Have a question or need assistance? Reach out to us through any of the following channels.</p>
+            </div>
+
+            <div class="tt-contact-info-grid">
+
+                <!--- Phone Card --->
+                <a href="tel:+919876543210" class="tt-contact-info-card">
+                    <div class="tt-contact-info-icon">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                    <span class="tt-contact-info-label">CALL US</span>
+                    <h3>Phone Number</h3>
+                    <p>+91 98765 43210</p>
+                    <p>+91 98765 43211</p>
+                    <span class="tt-contact-info-action">
+                        Call Now <i class="bi bi-arrow-up-right"></i>
+                    </span>
+                </a>
+
+                <!--- Email Card --->
+                <a href="mailto:info@stackly.com" class="tt-contact-info-card">
+                    <div class="tt-contact-info-icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <span class="tt-contact-info-label">EMAIL US</span>
+                    <h3>Email Address</h3>
+                    <p>info@stackly.com</p>
+                    <p>hello@stackly.com</p>
+                    <span class="tt-contact-info-action">
+                        Send an Email <i class="bi bi-arrow-up-right"></i>
+                    </span>
+                </a>
+
+                <!--- Location Card --->
+                <a href="https://www.google.com/maps/dir/?api=1&destination=MMR+Complex+Chinna+Thirupathi+Salem+Tamil+Nadu+636008"
+                    target="_blank" rel="noopener noreferrer" class="tt-contact-info-card">
+                    <div class="tt-contact-info-icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <span class="tt-contact-info-label">FIND US</span>
+                    <h3>Our Location</h3>
+                    <p>MMR Complex, Chinna Thirupathi, Salem, Tamil Nadu - 636008</p>
+                    <span class="tt-contact-info-action">
+                        Get Directions <i class="bi bi-arrow-up-right"></i>
+                    </span>
+                </a>
+
+                <!--- Working Hours Card --->
+                <div class="tt-contact-info-card tt-contact-info-hours">
+                    <div class="tt-contact-info-icon">
+                        <i class="bi bi-clock"></i>
+                    </div>
+                    <span class="tt-contact-info-label">WHEN TO REACH US</span>
+                    <h3>Working Hours</h3>
+                    <div class="tt-contact-info-hours-list">
+                        <div>
+                            <span>Monday – Saturday</span>
+                            <strong>9:00 AM – 6:00 PM</strong>
+                        </div>
+                        <div>
+                            <span>Sunday</span>
+                            <strong>Closed</strong>
+                        </div>
+                    </div>
+                    <span class="tt-contact-info-status">
+                        <i class="bi bi-info-circle"></i> General enquiry hours
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--- Contact Information Section End --->
+
+    <!--- Send Us a Message Section Start --->
+    <section class="tt-contact-form-section" id="contact-form">
+        <div class="container">
+            <div class="tt-contact-form-wrapper">
+
+                <!--- Contact Form Content --->
+                <div class="tt-contact-form-content">
+                    <span class="tt-contact-form-eyebrow">SEND AN ENQUIRY</span>
+                    <h2>Let's Talk About <span>How We Can Help.</span></h2>
+                    <p>Have a question, need assistance, or want to know more about Stackly? Send us a message and we'll
+                        be happy to hear from you.</p>
+
+                    <div class="tt-contact-form-benefits">
+                        <div>
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Easy and convenient communication</span>
+                        </div>
+                        <div>
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Support for your general enquiries</span>
+                        </div>
+                        <div>
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>We're happy to assist you</span>
+                        </div>
+                    </div>
+
+                    <div class="tt-contact-form-help">
+                        <div class="tt-contact-form-help-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <div>
+                            <strong>Need immediate assistance?</strong>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Contact Form --->
+                <div class="tt-contact-form-card">
+                    <div class="tt-contact-form-card-heading">
+                        <h3>Send Us a Message</h3>
+                        <p>Fill in the details below to get in touch with us.</p>
+                    </div>
+
+                    <form id="ttContactForm" action="#" method="post">
+                        <div class="tt-contact-form-grid">
+
+                            <div class="tt-contact-form-field">
+                                <label for="ttContactName">Full Name <span>*</span></label>
+                                <input type="text" id="ttContactName" name="name" placeholder="Enter your full name"
+                                    pattern="[A-Za-z ]+" title="Please enter letters only." autocomplete="name"
+                                    required>
+                            </div>
+
+                            <div class="tt-contact-form-field">
+                                <label for="ttContactEmail">Email Address <span>*</span></label>
+                                <input type="email" id="ttContactEmail" name="email"
+                                    placeholder="Enter your email address" autocomplete="email" required>
+                            </div>
+
+                            <div class="tt-contact-form-field">
+                                <label for="ttContactPhone">Phone Number <span>*</span></label>
+                                <input type="tel" id="ttContactPhone" name="phone"
+                                    placeholder="Enter 10-digit phone number" inputmode="numeric" pattern="[0-9]{10}"
+                                    minlength="10" maxlength="10" title="Please enter exactly 10 digits."
+                                    autocomplete="tel-national" required>
+                            </div>
+
+                            <div class="tt-contact-form-field">
+                                <label for="ttContactSubject">Subject <span>*</span></label>
+                                <input type="text" id="ttContactSubject" name="subject"
+                                    placeholder="Enter message subject" required>
+                            </div>
+
+                            <div class="tt-contact-form-field tt-contact-form-message">
+                                <label for="ttContactMessage">Your Message <span>*</span></label>
+                                <textarea id="ttContactMessage" name="message" rows="5"
+                                    placeholder="Write your message here..." required></textarea>
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="tt-contact-form-submit">
+                            <span>Send Message</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+
+                        <p class="tt-contact-form-privacy">
+                            <i class="bi bi-shield-check"></i>
+                            Your information will be handled responsibly.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--- Custom Success Popup --->
+    <div class="tt-contact-popup" id="ttContactPopup" aria-hidden="true">
+        <div class="tt-contact-popup-overlay"></div>
+        <div class="tt-contact-popup-box" role="dialog" aria-modal="true" aria-labelledby="ttContactPopupTitle">
+            <button type="button" class="tt-contact-popup-close" id="ttContactPopupClose" aria-label="Close popup">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="tt-contact-popup-icon">
+                <i class="bi bi-check-lg"></i>
+            </div>
+            <span class="tt-contact-popup-label">MESSAGE SUBMITTED</span>
+            <h3 id="ttContactPopupTitle">Thank You!</h3>
+            <p>Your message has been submitted successfully. We appreciate you reaching out to Stackly.</p>
+            <button type="button" class="tt-contact-popup-button" id="ttContactPopupOk">Continue</button>
+        </div>
+    </div>
+    <!--- Send Us a Message Section End --->
+
+    <!--- Our Location Section Start --->
+    <section class="tt-contact-location" id="our-location">
+        <div class="container">
+            <div class="tt-contact-location-heading">
+                <span class="tt-contact-location-eyebrow">FIND US HERE</span>
+                <h2>Visit Our <span>Location</span></h2>
+                <p>Find us easily and plan your visit. We're here to help you with your healthcare enquiries.</p>
+            </div>
+            <div class="tt-contact-location-wrapper">
+                <!--- Map Area --->
+                <div class="tt-contact-location-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=MMR+Complex+Chinna+Thirupathi+Salem+Tamil+Nadu+636008&output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Stackly Location Map">
+                    </iframe>
+                    <div class="tt-contact-location-map-label">
+                        <span class="tt-contact-location-map-icon"><i class="bi bi-geo-alt-fill"></i></span>
+                        <div>
+                            <h4>Stackly Healthcare</h4>
+                            <p>Chinna Thirupathi, Salem</p>
+                        </div>
+                    </div>
+                </div>
+                <!--- Location Details --->
+                <div class="tt-contact-location-details">
+                    <div class="tt-contact-location-icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <span class="tt-contact-location-tag">OUR LOCATION</span>
+                    <h3>Come and Find Us</h3>
+                    <p class="tt-contact-location-description">We're located at a convenient spot in Salem. Use the map
+                        to find our location and plan your route.</p>
+                    <div class="tt-contact-location-address">
+                        <span class="tt-contact-location-detail-icon"><i class="bi bi-pin-map"></i></span>
+                        <div>
+                            <h5>Our Address</h5>
+                            <p>MMR Complex, Chinna Thirupathi, Salem, Tamil Nadu - 636008</p>
+                        </div>
+                    </div>
+                    <div class="tt-contact-location-divider"></div>
+                    <div class="tt-contact-location-directions">
+                        <div class="tt-contact-location-direction-icon">
+                            <i class="bi bi-sign-turn-right"></i>
+                        </div>
+                        <div>
+                            <h5>Need Directions?</h5>
+                            <p>Get the easiest route to reach us.</p>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=MMR+Complex+Chinna+Thirupathi+Salem+Tamil+Nadu+636008"
+                        target="_blank" rel="noopener noreferrer" class="tt-contact-location-btn">
+                        Get Directions <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                    <div class="tt-contact-location-note">
+                        <i class="bi bi-info-circle"></i>
+                        <span>Tap the directions button to open Google Maps.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--- Our Location Section End --->
+
+    <!--- Frequently Asked Questions Section Start --->
+    <section class="tt-contact-faq" id="faq">
+        <div class="container">
+            <div class="tt-contact-faq-wrapper">
+                <!--- FAQ Introduction --->
+                <div class="tt-contact-faq-intro">
+                    <span class="tt-contact-faq-eyebrow">GOT QUESTIONS?</span>
+                    <h2>Frequently Asked <span>Questions</span></h2>
+                    <p class="tt-contact-faq-description">Find answers to common questions about Stackly and its
+                        healthcare platform. We're here to make things easier for you.</p>
+                    <div class="tt-contact-faq-support">
+                        <div class="tt-contact-faq-support-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <div>
+                            <h4>Still Have Questions?</h4>
+                            <p>Our team is happy to help with your enquiries.</p>
+                        </div>
+                    </div>
+                    <a href="404.html" class="tt-contact-faq-contact-btn">
+                        Contact Our Team <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+                <!--- FAQ Accordion --->
+                <div class="tt-contact-faq-list">
+                    <div class="accordion" id="ttContactFaqAccordion">
+                        <!--- FAQ Item 1 --->
+                        <div class="accordion-item tt-contact-faq-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ttFaqOne" aria-expanded="true" aria-controls="ttFaqOne">
+                                    What is Stackly?
+                                </button>
+                            </h3>
+                            <div id="ttFaqOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#ttContactFaqAccordion">
+                                <div class="accordion-body">
+                                    Stackly is a telemedicine and telehealth platform concept designed to make
+                                    healthcare information, doctor discovery and digital healthcare experiences easier
+                                    to access.
+                                </div>
+                            </div>
+                        </div>
+                        <!--- FAQ Item 2 --->
+                        <div class="accordion-item tt-contact-faq-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ttFaqTwo" aria-expanded="false" aria-controls="ttFaqTwo">
+                                    How can I find a doctor?
+                                </button>
+                            </h3>
+                            <div id="ttFaqTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#ttContactFaqAccordion">
+                                <div class="accordion-body">
+                                    You can explore the Doctors page to browse healthcare specialties and view available
+                                    doctor profiles. Profile information and availability should be confirmed before
+                                    making a consultation decision.
+                                </div>
+                            </div>
+                        </div>
+                        <!--- FAQ Item 3 --->
+                        <div class="accordion-item tt-contact-faq-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ttFaqThree" aria-expanded="false" aria-controls="ttFaqThree">
+                                    Can I book an appointment online?
+                                </button>
+                            </h3>
+                            <div id="ttFaqThree" class="accordion-collapse collapse"
+                                data-bs-parent="#ttContactFaqAccordion">
+                                <div class="accordion-body">
+                                    Online appointment booking is a planned platform feature. Please contact our team to
+                                    enquire about current appointment arrangements.
+                                </div>
+                            </div>
+                        </div>
+                        <!--- FAQ Item 4 --->
+                        <div class="accordion-item tt-contact-faq-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ttFaqFour" aria-expanded="false" aria-controls="ttFaqFour">
+                                    Does Stackly provide online consultations?
+                                </button>
+                            </h3>
+                            <div id="ttFaqFour" class="accordion-collapse collapse"
+                                data-bs-parent="#ttContactFaqAccordion">
+                                <div class="accordion-body">
+                                    Online consultation is part of the planned Stackly experience. Contact our team to
+                                    check whether this service is currently available.
+                                </div>
+                            </div>
+                        </div>
+                        <!--- FAQ Item 5 --->
+                        <div class="accordion-item tt-contact-faq-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ttFaqFive" aria-expanded="false" aria-controls="ttFaqFive">
+                                    How can I contact Stackly?
+                                </button>
+                            </h3>
+                            <div id="ttFaqFive" class="accordion-collapse collapse"
+                                data-bs-parent="#ttContactFaqAccordion">
+                                <div class="accordion-body">
+                                    You can reach us by phone at +91 98765 43210, email us at info@stackly.com, or use
+                                    the contact form on this page to send an enquiry.
+                                </div>
+                            </div>
+                        </div>
+                        <!--- FAQ Item 6 --->
+                        <div class="accordion-item tt-contact-faq-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ttFaqSix" aria-expanded="false" aria-controls="ttFaqSix">
+                                    Is my personal health information secure?
+                                </button>
+                            </h3>
+                            <div id="ttFaqSix" class="accordion-collapse collapse"
+                                data-bs-parent="#ttContactFaqAccordion">
+                                <div class="accordion-body">
+                                    Protecting personal information is important. Actual health-data collection, storage
+                                    and security depend on the platform's implemented privacy and security measures.
+                                    Please review the Privacy Policy before sharing sensitive information.
+                                </div>
+                            </div>
+                        </div>
+                        <!--- FAQ Item 7 --->
+                        <div class="accordion-item tt-contact-faq-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ttFaqSeven" aria-expanded="false" aria-controls="ttFaqSeven">
+                                    Can I use Stackly for medical emergencies?
+                                </button>
+                            </h3>
+                            <div id="ttFaqSeven" class="accordion-collapse collapse"
+                                data-bs-parent="#ttContactFaqAccordion">
+                                <div class="accordion-body">
+                                    No. Stackly is not an emergency response service. If you are experiencing a medical
+                                    emergency, contact your local emergency services or visit the nearest emergency
+                                    department immediately.
+                                </div>
+                            </div>
+                        </div>
+                        <!--- FAQ Item 8 --->
+                        <div class="accordion-item tt-contact-faq-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ttFaqEight" aria-expanded="false" aria-controls="ttFaqEight">
+                                    Where is Stackly located?
+                                </button>
+                            </h3>
+                            <div id="ttFaqEight" class="accordion-collapse collapse"
+                                data-bs-parent="#ttContactFaqAccordion">
+                                <div class="accordion-body">
+                                    Our listed location is MMR Complex, Chinna Thirupathi, Salem, Tamil Nadu - 636008.
+                                    You can find directions using the map in our Contact page.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--- Frequently Asked Questions Section End --->
+
+    <div id="footer"></div>
+
+    <!--- Js Files --->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/footer.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/inner-hero.js"></script>
+
+</body>
+
+</html>

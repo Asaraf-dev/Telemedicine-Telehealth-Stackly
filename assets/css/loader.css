@@ -1,0 +1,56 @@
+/*--- Loader Main ---*/
+.tt-ldr-loader {position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;width:100%;height:100vh;height:100dvh;background:#F7FCF9;overflow:hidden;opacity:1;visibility:visible;transition:opacity 0.65s ease,visibility 0.65s ease;}
+.tt-ldr-loader.tt-ldr-hidden {opacity:0;visibility:hidden;pointer-events:none;}
+/*--- Loader Background ---*/
+.tt-ldr-background {position:absolute;inset:0;overflow:hidden;pointer-events:none;}
+.tt-ldr-background::before {content:"";position:absolute;top:50%;left:50%;width:min(650px,90vw);aspect-ratio:1;border:1px solid rgba(22,134,90,0.07);border-radius:50%;transform:translate(-50%,-50%);}
+.tt-ldr-background::after {content:"";position:absolute;top:50%;left:50%;width:min(480px,70vw);aspect-ratio:1;border:1px dashed rgba(22,134,90,0.12);border-radius:50%;transform:translate(-50%,-50%);animation:ttLdrRotate 35s linear infinite;}
+.tt-ldr-orb {position:absolute;display:block;width:220px;height:220px;border-radius:50%;filter:blur(90px);opacity:0.35;}
+.tt-ldr-orb-one {top:10%;left:12%;background:#B9E9CF;}
+.tt-ldr-orb-two {right:10%;bottom:8%;background:#C8E9DE;}
+.tt-ldr-orb-three {top:45%;right:22%;width:130px;height:130px;background:#D9F3E5;}
+/*--- Loader Content ---*/
+.tt-ldr-content {position:relative;z-index:2;display:flex;align-items:center;flex-direction:column;text-align:center;padding:25px;}
+/*--- Loader Logo ---*/
+.tt-ldr-logo-wrap {position:relative;display:flex;align-items:center;justify-content:center;width:112px;height:112px;margin-bottom:25px;}
+.tt-ldr-logo-ring {position:absolute;inset:0;border:2px solid transparent;border-top-color:var(--tt-primary);border-right-color:rgba(22,134,90,0.18);border-radius:50%;animation:ttLdrRotate 2s linear infinite;}
+.tt-ldr-logo {position:relative;display:flex;align-items:center;justify-content:center;width:76px;height:76px;background:var(--tt-gradient);border-radius:25px;color:#FFFFFF;box-shadow:0 12px 35px rgba(22,134,90,0.22);animation:ttLdrFloat 2.5s ease-in-out infinite;}
+.tt-ldr-logo i {font-size:35px;}
+.tt-ldr-pulse {position:absolute;width:12px;height:12px;background:#39B77C;border:3px solid #F7FCF9;border-radius:50%;}
+.tt-ldr-pulse-one {top:9px;right:14px;animation:ttLdrPulse 1.8s ease-in-out infinite;}
+.tt-ldr-pulse-two {bottom:12px;left:10px;width:9px;height:9px;animation:ttLdrPulse 1.8s ease-in-out 0.6s infinite;}
+/*--- Loader Brand ---*/
+.tt-ldr-brand {display:flex;align-items:center;flex-direction:column;gap:5px;}
+.tt-ldr-brand-name {color:var(--tt-heading);font-family:var(--tt-font-heading);font-size:27px;font-weight:800;letter-spacing:4px;}
+.tt-ldr-brand-tagline {color:var(--tt-primary);font-family:var(--tt-font-body);font-size:10px;font-weight:700;letter-spacing:2.5px;}
+/*--- Loader Animation ---*/
+.tt-ldr-animation {display:flex;align-items:center;justify-content:center;gap:7px;margin-top:35px;}
+.tt-ldr-animation span {display:block;width:7px;height:7px;background:var(--tt-primary);border-radius:50%;animation:ttLdrDots 1s ease-in-out infinite;}
+.tt-ldr-animation span:nth-child(2) {animation-delay:0.15s;}
+.tt-ldr-animation span:nth-child(3) {animation-delay:0.3s;}
+/*--- Loader Message ---*/
+.tt-ldr-message {min-height:22px;margin:17px 0 0;color:var(--tt-muted);font-family:var(--tt-font-body);font-size:13px;font-weight:500;letter-spacing:0.2px;transition:opacity 0.25s ease,transform 0.25s ease;}
+/*--- Loader Bottom ---*/
+.tt-ldr-bottom {position:absolute;bottom:35px;left:0;display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:0 15px;color:var(--tt-muted);font-size:11px;font-weight:500;letter-spacing:0.3px;}
+.tt-ldr-bottom i {color:var(--tt-primary);font-size:15px;}
+/*--- Loader Animations ---*/
+@keyframes ttLdrRotate {to {transform:translate(-50%,-50%) rotate(360deg);}}
+.tt-ldr-logo-ring {animation:ttLdrRingRotate 2s linear infinite;}
+@keyframes ttLdrRingRotate {to {transform:rotate(360deg);}}
+@keyframes ttLdrFloat {0%,100% {transform:translateY(0);}50% {transform:translateY(-7px);}}
+@keyframes ttLdrPulse {0%,100% {transform:scale(1);opacity:1;}50% {transform:scale(1.6);opacity:0.5;}}
+@keyframes ttLdrDots {0%,60%,100% {transform:translateY(0);opacity:0.4;}30% {transform:translateY(-7px);opacity:1;}}
+/*--- Loader Responsive ---*/
+@media(max-width:575px) {
+.tt-ldr-logo-wrap {width:100px;height:100px;}
+.tt-ldr-logo {width:68px;height:68px;border-radius:22px;}
+.tt-ldr-logo i {font-size:31px;}
+.tt-ldr-brand-name {font-size:24px;}
+.tt-ldr-brand-tagline {font-size:9px;letter-spacing:2px;}
+.tt-ldr-message {font-size:12px;}
+.tt-ldr-bottom {bottom:25px;font-size:10px;}
+}
+/*--- Loader Reduced Motion ---*/
+@media(prefers-reduced-motion:reduce) {
+.tt-ldr-loader *, .tt-ldr-loader *::before, .tt-ldr-loader *::after {animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;}
+}

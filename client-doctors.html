@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Stackly</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body class="tt-dashboard-body">
+
+    <!--- Dashboard Layout --->
+    <div class="tt-dashboard-layout" id="ttDashboardLayout" data-dashboard-role="client"
+        data-dashboard-title="Client Dashboard">
+
+        <!--- Sidebar Overlay --->
+        <div class="tt-dashboard-overlay" id="ttDashboardOverlay"></div>
+
+        <!--- Sidebar --->
+        <aside class="tt-dashboard-sidebar" id="ttDashboardSidebar">
+
+            <!--- Sidebar Brand --->
+            <div class="tt-dashboard-sidebar-brand">
+                <a href="index.html">
+                    <img src="assets/images/brand-logo.webp" alt="Stackly">
+                </a>
+                <button type="button" class="tt-dashboard-sidebar-close" id="ttDashboardSidebarClose"
+                    aria-label="Close menu">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <!--- Mobile User Information --->
+            <div class="tt-dashboard-sidebar-user">
+                <div class="tt-dashboard-sidebar-avatar">
+                    <img src="assets/images/profile-2.webp" alt="Profile">
+                </div>
+                <div class="tt-dashboard-sidebar-user-details">
+                    <strong id="ttSidebarUserName">User</strong>
+                    <span id="ttSidebarUserEmail">Loading...</span>
+                </div>
+            </div>
+
+            <!--- Sidebar Navigation --->
+            <nav class="tt-dashboard-sidebar-nav" aria-label="Dashboard navigation">
+                <span class="tt-dashboard-nav-label">MAIN MENU</span>
+
+                <a href="client-dashboard.html" class="tt-dashboard-nav-link active" data-page="dashboard">
+                    <i class="bi bi-grid-1x2"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="client-appointments.html" class="tt-dashboard-nav-link" data-page="appointments">
+                    <i class="bi bi-calendar2-check"></i>
+                    <span>Appointments</span>
+                </a>
+
+                <a href="client-doctors.html" class="tt-dashboard-nav-link" data-page="doctors">
+                    <i class="bi bi-person-vcard"></i>
+                    <span>Doctors</span>
+                </a>
+
+                <a href="client-profile.html" class="tt-dashboard-nav-link" data-page="profile">
+                    <i class="bi bi-person-circle"></i>
+                    <span>My Profile</span>
+                </a>
+            </nav>
+
+            <!--- Sidebar Bottom --->
+            <div class="tt-dashboard-sidebar-bottom">
+                <div class="tt-dashboard-sidebar-help">
+                    <i class="bi bi-headset"></i>
+                    <div>
+                        <strong>Need Help?</strong>
+                        <span>We're here to assist you.</span>
+                    </div>
+                </div>
+                <button type="button" class="tt-dashboard-logout" id="ttDashboardLogout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <!--- Dashboard Main --->
+        <div class="tt-dashboard-main">
+
+            <!--- Topbar --->
+            <header class="tt-dashboard-topbar">
+
+                <div class="tt-dashboard-topbar-left">
+                    <button type="button" class="tt-dashboard-menu-toggle" id="ttDashboardMenuToggle"
+                        aria-label="Open navigation menu" aria-expanded="false">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="tt-dashboard-page-heading">
+                        <span class="tt-dashboard-page-eyebrow">STACKLY WORKSPACE</span>
+                        <h1 id="ttDashboardPageTitle">Admin Dashboard</h1>
+                    </div>
+                </div>
+
+                <div class="tt-dashboard-topbar-right">
+                    <div class="tt-dashboard-topbar-user">
+                        <span class="tt-dashboard-topbar-user-label">SIGNED IN AS</span>
+                        <strong id="ttTopbarUserEmail">Loading...</strong>
+                    </div>
+                    <button type="button" class="tt-dashboard-profile-button" aria-label="Open profile"
+                        onclick="window.location.href='admin-profile.html'">
+                        <img src="assets/images/profile-2.webp" alt="Profile">
+                    </button>
+                </div>
+            </header>
+
+            <!--- Dashboard Content --->
+            <main class="tt-dashboard-content">
+
+
+                <!--- Client Doctors --->
+                <section class="tt-client-doctors" id="ttClientDoctors">
+
+                    <!--- Page Heading --->
+                    <div class="tt-client-doctors-heading">
+                        <div>
+                            <span class="tt-client-doctors-eyebrow">HEALTHCARE DIRECTORY</span>
+                            <h2>Find Your Doctor</h2>
+                            <p>Explore healthcare professionals and find the right specialist for your needs.</p>
+                        </div>
+                        <a href="404.html" class="tt-client-doctors-book-btn">
+                            <i class="bi bi-calendar-plus"></i>
+                            <span>Book Appointment</span>
+                        </a>
+                    </div>
+
+                    <!--- Directory Stats --->
+                    <div class="tt-client-doctors-stats">
+                        <div class="tt-client-doctors-stat">
+                            <div class="tt-client-doctors-stat-icon"><i class="bi bi-people"></i></div>
+                            <div><span>Listed Doctors</span><strong>48</strong></div>
+                        </div>
+                        <div class="tt-client-doctors-stat">
+                            <div class="tt-client-doctors-stat-icon"><i class="bi bi-heart-pulse"></i></div>
+                            <div><span>Specialties</span><strong>12</strong></div>
+                        </div>
+                        <div class="tt-client-doctors-stat">
+                            <div class="tt-client-doctors-stat-icon"><i class="bi bi-camera-video"></i></div>
+                            <div><span>Online Consultation</span><strong>32</strong></div>
+                        </div>
+                        <div class="tt-client-doctors-stat">
+                            <div class="tt-client-doctors-stat-icon"><i class="bi bi-check-circle"></i></div>
+                            <div><span>Available Doctors</span><strong>36</strong></div>
+                        </div>
+                    </div>
+
+                    <!--- Search and Filters --->
+                    <div class="tt-client-doctors-filter-card">
+                        <div class="tt-client-doctors-filter-heading">
+                            <div>
+                                <h3>Browse Healthcare Professionals</h3>
+                                <p>Search and filter doctors to find a suitable specialist.</p>
+                            </div>
+                            <button type="button" class="tt-client-doctors-reset" id="ttClientDoctorReset">
+                                <i class="bi bi-arrow-counterclockwise"></i> Reset Filters
+                            </button>
+                        </div>
+
+                        <div class="tt-client-doctors-filter-grid">
+                            <div class="tt-client-doctors-search">
+                                <label for="ttClientDoctorSearch">Search Doctor</label>
+                                <div class="tt-client-doctors-input-wrap">
+                                    <i class="bi bi-search"></i>
+                                    <input type="search" id="ttClientDoctorSearch"
+                                        placeholder="Search by name or doctor ID...">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="ttClientDoctorSpecialty">Specialty</label>
+                                <select id="ttClientDoctorSpecialty">
+                                    <option value="">All Specialties</option>
+                                    <option value="General Medicine">General Medicine</option>
+                                    <option value="Cardiology">Cardiology</option>
+                                    <option value="Dermatology">Dermatology</option>
+                                    <option value="Pediatrics">Pediatrics</option>
+                                    <option value="Neurology">Neurology</option>
+                                    <option value="Orthopedics">Orthopedics</option>
+                                    <option value="Gynecology">Gynecology</option>
+                                    <option value="Dentistry">Dentistry</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="ttClientDoctorAvailability">Availability</label>
+                                <select id="ttClientDoctorAvailability">
+                                    <option value="">All Doctors</option>
+                                    <option value="available">Available</option>
+                                    <option value="unavailable">Unavailable</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="ttClientDoctorType">Consultation Type</label>
+                                <select id="ttClientDoctorType">
+                                    <option value="">All Types</option>
+                                    <option value="Online">Online</option>
+                                    <option value="In-person">In-person</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--- Doctor Directory --->
+                    <div class="tt-client-doctors-directory">
+                        <div class="tt-client-doctors-directory-heading">
+                            <div>
+                                <h3>Available Doctors</h3>
+                                <p>Explore our healthcare professional directory.</p>
+                            </div>
+                            <div class="tt-client-doctors-sort">
+                                <label for="ttClientDoctorSort">Sort by</label>
+                                <select id="ttClientDoctorSort">
+                                    <option value="default">Default</option>
+                                    <option value="name-asc">Name: A to Z</option>
+                                    <option value="name-desc">Name: Z to A</option>
+                                    <option value="experience">Experience: High to Low</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="tt-client-doctors-grid" id="ttClientDoctorsGrid">
+
+                            <!--- Doctor Card 1 --->
+                            <article class="tt-client-doctor-card" data-name="Alex Morgan" data-id="DOC-1001"
+                                data-specialty="General Medicine" data-availability="available"
+                                data-type="Online In-person" data-experience="8">
+                                <div class="tt-client-doctor-image">
+                                    <img src="assets/images/team-1.webp" alt="Dr. Alex Morgan">
+                                    <span class="tt-client-doctor-status available"><i></i> Available</span>
+                                </div>
+                                <div class="tt-client-doctor-info">
+                                    <span class="tt-client-doctor-id">DOC-1001</span>
+                                    <h4>Dr. Alex Morgan</h4>
+                                    <span class="tt-client-doctor-specialty">General Medicine</span>
+                                    <div class="tt-client-doctor-meta">
+                                        <span><i class="bi bi-briefcase"></i> 8 Years Experience</span>
+                                        <span><i class="bi bi-camera-video"></i> Online & In-person</span>
+                                    </div>
+                                    <div class="tt-client-doctor-actions">
+                                        <a href="404.html" class="tt-client-doctor-view">View Details <i
+                                                class="bi bi-arrow-up-right"></i></a>
+                                        <a href="404.html" class="tt-client-doctor-book"
+                                            aria-label="Book appointment with Alex Morgan"><i
+                                                class="bi bi-calendar-plus"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!--- Doctor Card 2 --->
+                            <article class="tt-client-doctor-card" data-name="Sophia Williams" data-id="DOC-1002"
+                                data-specialty="Cardiology" data-availability="available" data-type="Online"
+                                data-experience="12">
+                                <div class="tt-client-doctor-image">
+                                    <img src="assets/images/team-6.webp" alt="Dr. Sophia Williams">
+                                    <span class="tt-client-doctor-status available"><i></i> Available</span>
+                                </div>
+                                <div class="tt-client-doctor-info">
+                                    <span class="tt-client-doctor-id">DOC-1002</span>
+                                    <h4>Dr. Sophia Williams</h4>
+                                    <span class="tt-client-doctor-specialty">Cardiology</span>
+                                    <div class="tt-client-doctor-meta">
+                                        <span><i class="bi bi-briefcase"></i> 12 Years Experience</span>
+                                        <span><i class="bi bi-camera-video"></i> Online</span>
+                                    </div>
+                                    <div class="tt-client-doctor-actions">
+                                        <a href="404.html" class="tt-client-doctor-view">View Details <i
+                                                class="bi bi-arrow-up-right"></i></a>
+                                        <a href="404.html" class="tt-client-doctor-book"
+                                            aria-label="Book appointment with Sophia Williams"><i
+                                                class="bi bi-calendar-plus"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!--- Doctor Card 3 --->
+                            <article class="tt-client-doctor-card" data-name="Daniel Carter" data-id="DOC-1003"
+                                data-specialty="Dermatology" data-availability="unavailable"
+                                data-type="Online In-person" data-experience="6">
+                                <div class="tt-client-doctor-image">
+                                    <img src="assets/images/profile-3.webp" alt="Dr. Daniel Carter">
+                                    <span class="tt-client-doctor-status unavailable"><i></i> Unavailable</span>
+                                </div>
+                                <div class="tt-client-doctor-info">
+                                    <span class="tt-client-doctor-id">DOC-1003</span>
+                                    <h4>Dr. Daniel Carter</h4>
+                                    <span class="tt-client-doctor-specialty">Dermatology</span>
+                                    <div class="tt-client-doctor-meta">
+                                        <span><i class="bi bi-briefcase"></i> 6 Years Experience</span>
+                                        <span><i class="bi bi-camera-video"></i> Online & In-person</span>
+                                    </div>
+                                    <div class="tt-client-doctor-actions">
+                                        <a href="404.html" class="tt-client-doctor-view">View Details <i
+                                                class="bi bi-arrow-up-right"></i></a>
+                                        <a href="404.html" class="tt-client-doctor-book"
+                                            aria-label="Book appointment with Daniel Carter"><i
+                                                class="bi bi-calendar-plus"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!--- Doctor Card 4 --->
+                            <article class="tt-client-doctor-card" data-name="Olivia Bennett" data-id="DOC-1004"
+                                data-specialty="Pediatrics" data-availability="available" data-type="Online"
+                                data-experience="10">
+                                <div class="tt-client-doctor-image">
+                                    <img src="assets/images/profile-4.webp" alt="Dr. Olivia Bennett">
+                                    <span class="tt-client-doctor-status available"><i></i> Available</span>
+                                </div>
+                                <div class="tt-client-doctor-info">
+                                    <span class="tt-client-doctor-id">DOC-1004</span>
+                                    <h4>Dr. Olivia Bennett</h4>
+                                    <span class="tt-client-doctor-specialty">Pediatrics</span>
+                                    <div class="tt-client-doctor-meta">
+                                        <span><i class="bi bi-briefcase"></i> 10 Years Experience</span>
+                                        <span><i class="bi bi-camera-video"></i> Online</span>
+                                    </div>
+                                    <div class="tt-client-doctor-actions">
+                                        <a href="404.html" class="tt-client-doctor-view">View Details <i
+                                                class="bi bi-arrow-up-right"></i></a>
+                                        <a href="404.html" class="tt-client-doctor-book"
+                                            aria-label="Book appointment with Olivia Bennett"><i
+                                                class="bi bi-calendar-plus"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!--- Doctor Card 5 --->
+                            <article class="tt-client-doctor-card" data-name="Ethan Wilson" data-id="DOC-1005"
+                                data-specialty="Neurology" data-availability="available" data-type="In-person"
+                                data-experience="9">
+                                <div class="tt-client-doctor-image">
+                                    <img src="assets/images/profile-5.webp" alt="Dr. Ethan Wilson">
+                                    <span class="tt-client-doctor-status available"><i></i> Available</span>
+                                </div>
+                                <div class="tt-client-doctor-info">
+                                    <span class="tt-client-doctor-id">DOC-1005</span>
+                                    <h4>Dr. Ethan Wilson</h4>
+                                    <span class="tt-client-doctor-specialty">Neurology</span>
+                                    <div class="tt-client-doctor-meta">
+                                        <span><i class="bi bi-briefcase"></i> 9 Years Experience</span>
+                                        <span><i class="bi bi-person"></i> In-person</span>
+                                    </div>
+                                    <div class="tt-client-doctor-actions">
+                                        <a href="404.html" class="tt-client-doctor-view">View Details <i
+                                                class="bi bi-arrow-up-right"></i></a>
+                                        <a href="404.html" class="tt-client-doctor-book"
+                                            aria-label="Book appointment with Ethan Wilson"><i
+                                                class="bi bi-calendar-plus"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!--- Doctor Card 6 --->
+                            <article class="tt-client-doctor-card" data-name="Isabella Taylor" data-id="DOC-1006"
+                                data-specialty="Orthopedics" data-availability="unavailable"
+                                data-type="Online In-person" data-experience="7">
+                                <div class="tt-client-doctor-image">
+                                    <img src="assets/images/profile-6.webp" alt="Dr. Isabella Taylor">
+                                    <span class="tt-client-doctor-status unavailable"><i></i> Unavailable</span>
+                                </div>
+                                <div class="tt-client-doctor-info">
+                                    <span class="tt-client-doctor-id">DOC-1006</span>
+                                    <h4>Dr. Isabella Taylor</h4>
+                                    <span class="tt-client-doctor-specialty">Orthopedics</span>
+                                    <div class="tt-client-doctor-meta">
+                                        <span><i class="bi bi-briefcase"></i> 7 Years Experience</span>
+                                        <span><i class="bi bi-camera-video"></i> Online & In-person</span>
+                                    </div>
+                                    <div class="tt-client-doctor-actions">
+                                        <a href="404.html" class="tt-client-doctor-view">View Details <i
+                                                class="bi bi-arrow-up-right"></i></a>
+                                        <a href="404.html" class="tt-client-doctor-book"
+                                            aria-label="Book appointment with Isabella Taylor"><i
+                                                class="bi bi-calendar-plus"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!--- Doctor Card 7 --->
+                            <article class="tt-client-doctor-card" data-name="Mia Anderson" data-id="DOC-1007"
+                                data-specialty="Gynecology" data-availability="available" data-type="Online"
+                                data-experience="11">
+                                <div class="tt-client-doctor-image">
+                                    <img src="assets/images/profile-7.webp" alt="Dr. Mia Anderson">
+                                    <span class="tt-client-doctor-status available"><i></i> Available</span>
+                                </div>
+                                <div class="tt-client-doctor-info">
+                                    <span class="tt-client-doctor-id">DOC-1007</span>
+                                    <h4>Dr. Mia Anderson</h4>
+                                    <span class="tt-client-doctor-specialty">Gynecology</span>
+                                    <div class="tt-client-doctor-meta">
+                                        <span><i class="bi bi-briefcase"></i> 11 Years Experience</span>
+                                        <span><i class="bi bi-camera-video"></i> Online</span>
+                                    </div>
+                                    <div class="tt-client-doctor-actions">
+                                        <a href="404.html" class="tt-client-doctor-view">View Details <i
+                                                class="bi bi-arrow-up-right"></i></a>
+                                        <a href="404.html" class="tt-client-doctor-book"
+                                            aria-label="Book appointment with Mia Anderson"><i
+                                                class="bi bi-calendar-plus"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!--- Doctor Card 8 --->
+                            <article class="tt-client-doctor-card" data-name="Noah Thomas" data-id="DOC-1008"
+                                data-specialty="Dentistry" data-availability="available" data-type="In-person"
+                                data-experience="5">
+                                <div class="tt-client-doctor-image">
+                                    <img src="assets/images/profile-8.webp" alt="Dr. Noah Thomas">
+                                    <span class="tt-client-doctor-status available"><i></i> Available</span>
+                                </div>
+                                <div class="tt-client-doctor-info">
+                                    <span class="tt-client-doctor-id">DOC-1008</span>
+                                    <h4>Dr. Noah Thomas</h4>
+                                    <span class="tt-client-doctor-specialty">Dentistry</span>
+                                    <div class="tt-client-doctor-meta">
+                                        <span><i class="bi bi-briefcase"></i> 5 Years Experience</span>
+                                        <span><i class="bi bi-person"></i> In-person</span>
+                                    </div>
+                                    <div class="tt-client-doctor-actions">
+                                        <a href="404.html" class="tt-client-doctor-view">View Details <i
+                                                class="bi bi-arrow-up-right"></i></a>
+                                        <a href="404.html" class="tt-client-doctor-book"
+                                            aria-label="Book appointment with Noah Thomas"><i
+                                                class="bi bi-calendar-plus"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--- Empty State --->
+                        <div class="tt-client-doctors-empty" id="ttClientDoctorsEmpty" hidden>
+                            <i class="bi bi-search"></i>
+                            <h4>No Doctors Found</h4>
+                            <p>Try adjusting your search or filters to find doctors.</p>
+                            <button type="button" id="ttClientDoctorEmptyReset">Clear Filters</button>
+                        </div>
+
+                        <!--- Directory Footer --->
+                        <div class="tt-client-doctors-footer">
+                            <span id="ttClientDoctorResultCount">Showing 8 doctors</span>
+                            <div class="tt-client-doctors-pagination">
+                                <button type="button" id="ttClientDoctorPrev" disabled aria-label="Previous page"><i
+                                        class="bi bi-chevron-left"></i></button>
+                                <span id="ttClientDoctorPageInfo">1 / 2</span>
+                                <button type="button" id="ttClientDoctorNext" aria-label="Next page"><i
+                                        class="bi bi-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--- Directory Notice --->
+                    <div class="tt-client-doctors-notice">
+                        <i class="bi bi-info-circle"></i>
+                        <p>Doctor profiles and availability shown here are sample demonstration data. Please verify
+                            professional details and availability before using this directory for real healthcare
+                            decisions.</p>
+                    </div>
+
+                </section>
+
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/client-doctors.js"></script>
+</body>
+
+</html>

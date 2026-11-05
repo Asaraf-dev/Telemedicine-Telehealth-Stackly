@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Stackly</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body class="tt-dashboard-body">
+
+    <!--- Dashboard Layout --->
+    <div class="tt-dashboard-layout" id="ttDashboardLayout" data-dashboard-role="client"
+        data-dashboard-title="Client Dashboard">
+
+        <!--- Sidebar Overlay --->
+        <div class="tt-dashboard-overlay" id="ttDashboardOverlay"></div>
+
+        <!--- Sidebar --->
+        <aside class="tt-dashboard-sidebar" id="ttDashboardSidebar">
+
+            <!--- Sidebar Brand --->
+            <div class="tt-dashboard-sidebar-brand">
+                <a href="index.html">
+                    <img src="assets/images/brand-logo.webp" alt="Stackly">
+                </a>
+                <button type="button" class="tt-dashboard-sidebar-close" id="ttDashboardSidebarClose"
+                    aria-label="Close menu">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <!--- Mobile User Information --->
+            <div class="tt-dashboard-sidebar-user">
+                <div class="tt-dashboard-sidebar-avatar">
+                    <img src="assets/images/profile-2.webp" alt="Profile">
+                </div>
+                <div class="tt-dashboard-sidebar-user-details">
+                    <strong id="ttSidebarUserName">User</strong>
+                    <span id="ttSidebarUserEmail">Loading...</span>
+                </div>
+            </div>
+
+            <!--- Sidebar Navigation --->
+            <nav class="tt-dashboard-sidebar-nav" aria-label="Dashboard navigation">
+                <span class="tt-dashboard-nav-label">MAIN MENU</span>
+
+                <a href="client-dashboard.html" class="tt-dashboard-nav-link active" data-page="dashboard">
+                    <i class="bi bi-grid-1x2"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="client-appointments.html" class="tt-dashboard-nav-link" data-page="appointments">
+                    <i class="bi bi-calendar2-check"></i>
+                    <span>Appointments</span>
+                </a>
+
+                <a href="client-doctors.html" class="tt-dashboard-nav-link" data-page="doctors">
+                    <i class="bi bi-person-vcard"></i>
+                    <span>Doctors</span>
+                </a>
+
+                <a href="client-profile.html" class="tt-dashboard-nav-link" data-page="profile">
+                    <i class="bi bi-person-circle"></i>
+                    <span>My Profile</span>
+                </a>
+            </nav>
+
+            <!--- Sidebar Bottom --->
+            <div class="tt-dashboard-sidebar-bottom">
+                <div class="tt-dashboard-sidebar-help">
+                    <i class="bi bi-headset"></i>
+                    <div>
+                        <strong>Need Help?</strong>
+                        <span>We're here to assist you.</span>
+                    </div>
+                </div>
+                <button type="button" class="tt-dashboard-logout" id="ttDashboardLogout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <!--- Dashboard Main --->
+        <div class="tt-dashboard-main">
+
+            <!--- Topbar --->
+            <header class="tt-dashboard-topbar">
+
+                <div class="tt-dashboard-topbar-left">
+                    <button type="button" class="tt-dashboard-menu-toggle" id="ttDashboardMenuToggle"
+                        aria-label="Open navigation menu" aria-expanded="false">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="tt-dashboard-page-heading">
+                        <span class="tt-dashboard-page-eyebrow">STACKLY WORKSPACE</span>
+                        <h1 id="ttDashboardPageTitle">Admin Dashboard</h1>
+                    </div>
+                </div>
+
+                <div class="tt-dashboard-topbar-right">
+                    <div class="tt-dashboard-topbar-user">
+                        <span class="tt-dashboard-topbar-user-label">SIGNED IN AS</span>
+                        <strong id="ttTopbarUserEmail">Loading...</strong>
+                    </div>
+                    <button type="button" class="tt-dashboard-profile-button" aria-label="Open profile"
+                        onclick="window.location.href='admin-profile.html'">
+                        <img src="assets/images/profile-2.webp" alt="Profile">
+                    </button>
+                </div>
+            </header>
+
+            <!--- Dashboard Content --->
+            <main class="tt-dashboard-content">
+                <div class="tt-dashboard-welcome">
+                    <div>
+                        <span class="tt-dashboard-welcome-label">OVERVIEW</span>
+                        <h2>Welcome back, <span id="ttDashboardWelcomeName">User</span></h2>
+                        <p>Here's what's happening in your healthcare workspace today.</p>
+                    </div>
+                    <div class="tt-dashboard-welcome-date">
+                        <i class="bi bi-calendar3"></i>
+                        <span id="ttDashboardDate">Today</span>
+                    </div>
+                </div>
+
+
+                <!--- Client Overview --->
+                <section class="tt-client-overview">
+
+                    <!--- Overview Statistics --->
+                    <div class="tt-client-stats">
+                        <div class="tt-client-stat-card">
+                            <div class="tt-client-stat-top">
+                                <div class="tt-client-stat-icon tt-client-icon-green">
+                                    <i class="bi bi-calendar2-check"></i>
+                                </div>
+                                <span class="tt-client-stat-label">ALL TIME</span>
+                            </div>
+                            <h3>12</h3>
+                            <p>Total Appointments</p>
+                            <div class="tt-client-stat-bottom">
+                                <i class="bi bi-info-circle"></i>
+                                <span>Illustrative account data</span>
+                            </div>
+                        </div>
+
+                        <div class="tt-client-stat-card">
+                            <div class="tt-client-stat-top">
+                                <div class="tt-client-stat-icon tt-client-icon-blue">
+                                    <i class="bi bi-clock-history"></i>
+                                </div>
+                                <span class="tt-client-stat-label">UPCOMING</span>
+                            </div>
+                            <h3>02</h3>
+                            <p>Upcoming Appointments</p>
+                            <div class="tt-client-stat-bottom">
+                                <i class="bi bi-info-circle"></i>
+                                <span>Illustrative account data</span>
+                            </div>
+                        </div>
+
+                        <div class="tt-client-stat-card">
+                            <div class="tt-client-stat-top">
+                                <div class="tt-client-stat-icon tt-client-icon-orange">
+                                    <i class="bi bi-check2-circle"></i>
+                                </div>
+                                <span class="tt-client-stat-label">COMPLETED</span>
+                            </div>
+                            <h3>08</h3>
+                            <p>Completed Appointments</p>
+                            <div class="tt-client-stat-bottom">
+                                <i class="bi bi-info-circle"></i>
+                                <span>Illustrative account data</span>
+                            </div>
+                        </div>
+
+                        <div class="tt-client-stat-card">
+                            <div class="tt-client-stat-top">
+                                <div class="tt-client-stat-icon tt-client-icon-purple">
+                                    <i class="bi bi-heart-pulse"></i>
+                                </div>
+                                <span class="tt-client-stat-label">PROFILE</span>
+                            </div>
+                            <h3>100%</h3>
+                            <p>Profile Completion</p>
+                            <div class="tt-client-stat-bottom">
+                                <i class="bi bi-info-circle"></i>
+                                <span>Demo indicator</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--- Dashboard Main Grid --->
+                    <div class="tt-client-main-grid">
+
+                        <!--- Upcoming Appointment --->
+                        <div class="tt-client-panel tt-client-upcoming">
+                            <div class="tt-client-panel-heading">
+                                <div>
+                                    <span class="tt-client-section-label">YOUR SCHEDULE</span>
+                                    <h3>Upcoming Appointment</h3>
+                                </div>
+                                <a href="404.html" class="tt-client-view-link">
+                                    View All <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+
+                            <div class="tt-client-appointment-card">
+                                <div class="tt-client-appointment-date">
+                                    <span>DEC</span>
+                                    <strong>12</strong>
+                                    <small>2026</small>
+                                </div>
+
+                                <div class="tt-client-appointment-info">
+                                    <span class="tt-client-appointment-type">
+                                        <i class="bi bi-camera-video"></i> Online Consultation
+                                    </span>
+                                    <h4>Dr. Sophia Williams</h4>
+                                    <p>Cardiology</p>
+                                    <div class="tt-client-appointment-meta">
+                                        <span><i class="bi bi-clock"></i> 10:30 AM</span>
+                                        <span><i class="bi bi-calendar3"></i> Saturday</span>
+                                    </div>
+                                </div>
+
+                                <span class="tt-client-appointment-status">Scheduled</span>
+                            </div>
+
+                            <div class="tt-client-appointment-actions">
+                                <a href="404.html" class="tt-client-primary-link">
+                                    View Appointment <i class="bi bi-arrow-right"></i>
+                                </a>
+                                <span><i class="bi bi-info-circle"></i> Sample appointment</span>
+                            </div>
+                        </div>
+
+                        <!--- Quick Actions --->
+                        <div class="tt-client-panel tt-client-quick-actions">
+                            <div class="tt-client-panel-heading">
+                                <div>
+                                    <span class="tt-client-section-label">GET STARTED</span>
+                                    <h3>Quick Actions</h3>
+                                </div>
+                            </div>
+
+                            <div class="tt-client-action-list">
+                                <a href="client-doctors.html" class="tt-client-action-item">
+                                    <span class="tt-client-action-icon tt-client-icon-green">
+                                        <i class="bi bi-search"></i>
+                                    </span>
+                                    <span class="tt-client-action-text">
+                                        <strong>Find a Doctor</strong>
+                                        <small>Explore healthcare professionals</small>
+                                    </span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
+
+                                <a href="client-appointments.html" class="tt-client-action-item">
+                                    <span class="tt-client-action-icon tt-client-icon-blue">
+                                        <i class="bi bi-calendar-plus"></i>
+                                    </span>
+                                    <span class="tt-client-action-text">
+                                        <strong>My Appointments</strong>
+                                        <small>View your appointment schedule</small>
+                                    </span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
+
+                                <a href="client-profile.html" class="tt-client-action-item">
+                                    <span class="tt-client-action-icon tt-client-icon-purple">
+                                        <i class="bi bi-person-gear"></i>
+                                    </span>
+                                    <span class="tt-client-action-text">
+                                        <strong>My Profile</strong>
+                                        <small>View your account information</small>
+                                    </span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--- Bottom Grid --->
+                    <div class="tt-client-bottom-grid">
+
+                        <!--- Recent Appointments --->
+                        <div class="tt-client-panel tt-client-recent">
+                            <div class="tt-client-panel-heading">
+                                <div>
+                                    <span class="tt-client-section-label">YOUR HISTORY</span>
+                                    <h3>Recent Appointments</h3>
+                                </div>
+                                <a href="404.html" class="tt-client-view-link">
+                                    View All <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+
+                            <div class="tt-client-recent-list">
+                                <div class="tt-client-recent-item">
+                                    <div class="tt-client-recent-avatar">
+                                        <img src="assets/images/profile-8.webp" alt="Doctor">
+                                    </div>
+                                    <div class="tt-client-recent-info">
+                                        <strong>Dr. Alex Morgan</strong>
+                                        <span>General Medicine</span>
+                                    </div>
+                                    <div class="tt-client-recent-date">
+                                        <strong>Nov 02, 2026</strong>
+                                        <span class="tt-client-completed">Completed</span>
+                                    </div>
+                                </div>
+
+                                <div class="tt-client-recent-item">
+                                    <div class="tt-client-recent-avatar">
+                                        <img src="assets/images/profile-3.webp" alt="Doctor">
+                                    </div>
+                                    <div class="tt-client-recent-info">
+                                        <strong>Dr. Daniel Carter</strong>
+                                        <span>Dermatology</span>
+                                    </div>
+                                    <div class="tt-client-recent-date">
+                                        <strong>Oct 18, 2026</strong>
+                                        <span class="tt-client-completed">Completed</span>
+                                    </div>
+                                </div>
+
+                                <div class="tt-client-recent-item">
+                                    <div class="tt-client-recent-avatar">
+                                        <img src="assets/images/profile-4.webp" alt="Doctor">
+                                    </div>
+                                    <div class="tt-client-recent-info">
+                                        <strong>Dr. Olivia Bennett</strong>
+                                        <span>Pediatrics</span>
+                                    </div>
+                                    <div class="tt-client-recent-date">
+                                        <strong>Oct 05, 2026</strong>
+                                        <span class="tt-client-completed">Completed</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tt-client-demo-note">
+                                <i class="bi bi-info-circle"></i>
+                                Example appointment history for dashboard preview.
+                            </div>
+                        </div>
+
+                        <!--- Profile Summary --->
+                        <div class="tt-client-panel tt-client-profile-summary">
+                            <div class="tt-client-panel-heading">
+                                <div>
+                                    <span class="tt-client-section-label">ACCOUNT OVERVIEW</span>
+                                    <h3>My Profile</h3>
+                                </div>
+                                <i class="bi bi-person-circle tt-client-profile-heading-icon"></i>
+                            </div>
+
+                            <div class="tt-client-profile-summary-user">
+                                <div class="tt-client-profile-summary-avatar">
+                                    <img src="assets/images/profile-2.webp" alt="Client Profile">
+                                </div>
+                                <div>
+                                    <h4 id="ttClientOverviewName">Client User</h4>
+                                    <p id="ttClientOverviewEmail">Loading...</p>
+                                </div>
+                            </div>
+
+                            <div class="tt-client-profile-summary-details">
+                                <div>
+                                    <span>Account Type</span>
+                                    <strong id="ttClientOverviewRole">Client</strong>
+                                </div>
+                                <div>
+                                    <span>Phone Number</span>
+                                    <strong id="ttClientOverviewPhone">Not available</strong>
+                                </div>
+                                <div>
+                                    <span>Account Status</span>
+                                    <strong class="tt-client-profile-active">
+                                        <i class="bi bi-check-circle-fill"></i> Current Session
+                                    </strong>
+                                </div>
+                            </div>
+
+                            <a href="404.html" class="tt-client-profile-link">
+                                View My Profile <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--- Healthcare Reminder --->
+                    <div class="tt-client-reminder">
+                        <div class="tt-client-reminder-icon">
+                            <i class="bi bi-calendar-heart"></i>
+                        </div>
+                        <div>
+                            <h4>Stay on top of your appointments</h4>
+                            <p>Visit your appointments page to review your schedule and manage your bookings.</p>
+                        </div>
+                        <a href="404.html">
+                            View Appointments <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </section>
+
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/client-overview.js"></script>
+</body>
+
+</html>

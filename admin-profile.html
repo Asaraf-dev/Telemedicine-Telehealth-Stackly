@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Stackly</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body class="tt-dashboard-body">
+
+    <!--- Dashboard Layout --->
+    <div class="tt-dashboard-layout" id="ttDashboardLayout" data-dashboard-role="admin"
+        data-dashboard-title="Admin Dashboard">
+
+        <!--- Sidebar Overlay --->
+        <div class="tt-dashboard-overlay" id="ttDashboardOverlay"></div>
+
+        <!--- Sidebar --->
+        <aside class="tt-dashboard-sidebar" id="ttDashboardSidebar">
+
+            <!--- Sidebar Brand --->
+            <div class="tt-dashboard-sidebar-brand">
+                <a href="index.html">
+                    <img src="assets/images/brand-logo.webp" alt="Stackly">
+                </a>
+                <button type="button" class="tt-dashboard-sidebar-close" id="ttDashboardSidebarClose"
+                    aria-label="Close menu">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <!--- Mobile User Information --->
+            <div class="tt-dashboard-sidebar-user">
+                <div class="tt-dashboard-sidebar-avatar">
+                    <img src="assets/images/profile-1.webp" alt="Profile">
+                </div>
+                <div class="tt-dashboard-sidebar-user-details">
+                    <strong id="ttSidebarUserName">User</strong>
+                    <span id="ttSidebarUserEmail">Loading...</span>
+                </div>
+            </div>
+
+            <!--- Sidebar Navigation --->
+            <nav class="tt-dashboard-sidebar-nav" aria-label="Dashboard navigation">
+                <span class="tt-dashboard-nav-label">MAIN MENU</span>
+
+                <a href="admin-dashboard.html" class="tt-dashboard-nav-link" data-page="dashboard">
+                    <i class="bi bi-grid-1x2"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="admin-appointments.html" class="tt-dashboard-nav-link" data-page="appointments">
+                    <i class="bi bi-calendar2-check"></i>
+                    <span>Appointments</span>
+                </a>
+
+                <a href="admin-doctors.html" class="tt-dashboard-nav-link" data-page="doctors">
+                    <i class="bi bi-person-vcard"></i>
+                    <span>Doctors</span>
+                </a>
+
+                <a href="admin-profile.html" class="tt-dashboard-nav-link active" data-page="profile">
+                    <i class="bi bi-person-circle"></i>
+                    <span>My Profile</span>
+                </a>
+            </nav>
+
+            <!--- Sidebar Bottom --->
+            <div class="tt-dashboard-sidebar-bottom">
+                <div class="tt-dashboard-sidebar-help">
+                    <i class="bi bi-headset"></i>
+                    <div>
+                        <strong>Need Help?</strong>
+                        <span>We're here to assist you.</span>
+                    </div>
+                </div>
+                <button type="button" class="tt-dashboard-logout" id="ttDashboardLogout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <!--- Dashboard Main --->
+        <div class="tt-dashboard-main">
+
+            <!--- Topbar --->
+            <header class="tt-dashboard-topbar">
+
+                <div class="tt-dashboard-topbar-left">
+                    <button type="button" class="tt-dashboard-menu-toggle" id="ttDashboardMenuToggle"
+                        aria-label="Open navigation menu" aria-expanded="false">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="tt-dashboard-page-heading">
+                        <span class="tt-dashboard-page-eyebrow">STACKLY WORKSPACE</span>
+                        <h1 id="ttDashboardPageTitle">Admin Dashboard</h1>
+                    </div>
+                </div>
+
+                <div class="tt-dashboard-topbar-right">
+                    <div class="tt-dashboard-topbar-user">
+                        <span class="tt-dashboard-topbar-user-label">SIGNED IN AS</span>
+                        <strong id="ttTopbarUserEmail">Loading...</strong>
+                    </div>
+                    <button type="button" class="tt-dashboard-profile-button" aria-label="Open profile"
+                        onclick="window.location.href='admin-profile.html'">
+                        <img src="assets/images/profile-1.webp" alt="Profile">
+                    </button>
+                </div>
+            </header>
+
+            <!--- Dashboard Content --->
+            <main class="tt-dashboard-content">
+
+
+                <!--- Admin Profile --->
+                <section class="tt-admin-profile">
+                    <!--- Page Heading --->
+                    <div class="tt-admin-profile-heading">
+                        <div>
+                            <span class="tt-admin-profile-eyebrow">ACCOUNT SETTINGS</span>
+                            <h2>My Profile</h2>
+                            <p>View your personal information and account details.</p>
+                        </div>
+                        <a href="404.html" class="tt-admin-profile-password-btn">
+                            <i class="bi bi-shield-lock"></i>
+                            <span>Change Password</span>
+                        </a>
+                    </div>
+
+                    <!--- Profile Overview --->
+                    <div class="tt-admin-profile-overview">
+                        <div class="tt-admin-profile-cover"></div>
+                        <div class="tt-admin-profile-overview-content">
+                            <div class="tt-admin-profile-avatar">
+                                <img src="assets/images/profile-1.webp" alt="Admin Profile">
+                                <span class="tt-admin-profile-online"></span>
+                            </div>
+                            <div class="tt-admin-profile-overview-info">
+                                <h3 id="ttAdminProfileName">Loading...</h3>
+                                <p id="ttAdminProfileLoginEmail">Loading...</p>
+                                <span class="tt-admin-profile-role">
+                                    <i class="bi bi-shield-check"></i>
+                                    <span id="ttAdminProfileRole">Administrator</span>
+                                </span>
+                            </div>
+                            <div class="tt-admin-profile-account-status">
+                                <span class="tt-admin-profile-status-dot"></span>
+                                Active Session
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--- Profile Information --->
+                    <div class="tt-admin-profile-grid">
+                        <!--- Personal Information --->
+                        <div class="tt-admin-profile-card">
+                            <div class="tt-admin-profile-card-heading">
+                                <div class="tt-admin-profile-card-icon">
+                                    <i class="bi bi-person-vcard"></i>
+                                </div>
+                                <div>
+                                    <h3>Personal Information</h3>
+                                    <p>Your registered personal details</p>
+                                </div>
+                            </div>
+
+                            <div class="tt-admin-profile-details">
+                                <div class="tt-admin-profile-detail">
+                                    <span>Full Name</span>
+                                    <strong id="ttAdminProfileFullName">Not available</strong>
+                                </div>
+                                <div class="tt-admin-profile-detail">
+                                    <span>Phone Number</span>
+                                    <strong id="ttAdminProfilePhone">Not available</strong>
+                                </div>
+                                <div class="tt-admin-profile-detail">
+                                    <span>Registered Email</span>
+                                    <strong id="ttAdminProfileRegisteredEmail">Not available</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--- Account Information --->
+                        <div class="tt-admin-profile-card">
+                            <div class="tt-admin-profile-card-heading">
+                                <div class="tt-admin-profile-card-icon tt-admin-profile-account-icon">
+                                    <i class="bi bi-shield-lock"></i>
+                                </div>
+                                <div>
+                                    <h3>Account Information</h3>
+                                    <p>Your current login and account details</p>
+                                </div>
+                            </div>
+
+                            <div class="tt-admin-profile-details">
+                                <div class="tt-admin-profile-detail">
+                                    <span>Login Email</span>
+                                    <strong id="ttAdminProfileAccountEmail">Not available</strong>
+                                </div>
+                                <div class="tt-admin-profile-detail">
+                                    <span>Account Type</span>
+                                    <strong id="ttAdminProfileAccountRole">Admin</strong>
+                                </div>
+                                <div class="tt-admin-profile-detail">
+                                    <span>Login Status</span>
+                                    <strong class="tt-admin-profile-login-status">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Logged In
+                                    </strong>
+                                </div>
+                            </div>
+
+                            <a href="404.html" class="tt-admin-profile-security-link">
+                                <span>
+                                    <i class="bi bi-key"></i>
+                                    Change your password
+                                </span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--- Account Notice --->
+                    <div class="tt-admin-profile-notice">
+                        <i class="bi bi-info-circle"></i>
+                        <p>Your profile information is displayed from the details saved during registration and login.
+                        </p>
+                    </div>
+                </section>
+
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/admin-profile.js"></script>
+</body>
+
+</html>

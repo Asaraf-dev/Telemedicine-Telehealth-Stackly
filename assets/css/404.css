@@ -1,0 +1,83 @@
+/*--- 404 Main ---*/
+.tt-404-page {position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;min-height:100vh;min-height:100dvh;padding:35px 20px 25px;background:#F7FCF9;overflow:hidden;}
+/*--- Background ---*/
+.tt-404-bg {position:absolute;inset:0;overflow:hidden;pointer-events:none;}
+.tt-404-orb {position:absolute;width:300px;height:300px;border-radius:50%;filter:blur(100px);opacity:0.35;}
+.tt-404-orb-one {top:-130px;left:-100px;background:#B9E9CF;}
+.tt-404-orb-two {right:-100px;bottom:-130px;background:#C8E9DE;}
+.tt-404-circle {position:absolute;top:50%;left:50%;width:650px;height:650px;border:1px solid rgba(22,134,90,0.07);border-radius:50%;transform:translate(-50%,-50%);}
+.tt-404-circle-two {width:480px;height:480px;border-style:dashed;border-color:rgba(22,134,90,0.1);}
+/*--- 404 Container ---*/
+.tt-404-container {position:relative;z-index:2;display:flex;align-items:center;flex-direction:column;width:100%;max-width:700px;margin:auto;text-align:center;}
+/*--- Brand ---*/
+.tt-404-brand {display:inline-flex;align-items:center;justify-content:center;margin-bottom:20px;}
+.tt-404-brand img {width:155px;height:55px;object-fit:contain;}
+/*--- 404 Illustration ---*/
+.tt-404-illustration {position:relative;display:flex;align-items:center;justify-content:center;gap:20px;width:100%;height:225px;margin:0 auto 12px;}
+.tt-404-number {color:var(--tt-primary);font-family:var(--tt-font-heading);font-size:clamp(115px,18vw,185px);font-weight:800;line-height:1;letter-spacing:-10px;text-shadow:0 15px 35px rgba(22,134,90,0.12);animation:tt404Float 4s ease-in-out infinite;}
+.tt-404-number:last-of-type {animation-delay:0.5s;}
+.tt-404-center {position:relative;display:flex;align-items:center;justify-content:center;width:115px;height:115px;flex-shrink:0;background:#FFFFFF;border:1px solid #D9EFE2;border-radius:35px;box-shadow:0 15px 45px rgba(22,134,90,0.13);animation:tt404CenterFloat 3s ease-in-out infinite;}
+.tt-404-icon-circle {display:flex;align-items:center;justify-content:center;width:78px;height:78px;background:var(--tt-gradient);border-radius:25px;color:#FFFFFF;}
+.tt-404-icon-circle i {font-size:37px;}
+.tt-404-center-dot {position:absolute;width:13px;height:13px;background:#4AC58A;border:3px solid #FFFFFF;border-radius:50%;}
+.tt-404-dot-one {top:12px;right:10px;}
+.tt-404-dot-two {bottom:12px;left:10px;background:#B5E8CB;}
+/*--- Floating Icons ---*/
+.tt-404-floating-icon {position:absolute;display:flex;align-items:center;justify-content:center;width:39px;height:39px;background:#FFFFFF;border:1px solid #DCEFE4;border-radius:13px;color:var(--tt-primary);box-shadow:0 8px 25px rgba(22,134,90,0.1);animation:tt404Float 3.5s ease-in-out infinite;}
+.tt-404-floating-icon i {font-size:17px;}
+.tt-404-floating-one {top:5px;left:23%;}
+.tt-404-floating-two {right:22%;top:20px;animation-delay:0.8s;}
+.tt-404-floating-three {right:17%;bottom:8px;animation-delay:1.2s;}
+/*--- 404 Content ---*/
+.tt-404-content {max-width:560px;}
+.tt-404-label {display:inline-flex;align-items:center;gap:8px;margin-bottom:13px;padding:8px 14px;background:#EAF7F0;border:1px solid #D6EDE0;border-radius:30px;color:var(--tt-primary);font-size:10px;font-weight:800;letter-spacing:1.5px;}
+.tt-404-label span {width:7px;height:7px;background:var(--tt-primary);border-radius:50%;box-shadow:0 0 0 4px rgba(22,134,90,0.1);}
+.tt-404-content h1 {margin:0 0 13px;color:var(--tt-heading);font-family:var(--tt-font-heading);font-size:clamp(27px,4vw,38px);font-weight:800;letter-spacing:-1px;}
+.tt-404-content p {max-width:510px;margin:0 auto;color:var(--tt-muted);font-family:var(--tt-font-body);font-size:14px;line-height:1.9;}
+/*--- 404 Actions ---*/
+.tt-404-actions {display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:13px;margin-top:30px;}
+.tt-404-back-btn,.tt-404-home-btn {display:inline-flex;align-items:center;justify-content:center;gap:10px;min-width:155px;min-height:49px;padding:0 22px;border:1px solid var(--tt-primary);border-radius:13px;font-family:var(--tt-font-body);font-size:13px;font-weight:700;transition:all 0.3s ease;}
+.tt-404-back-btn {background:#FFFFFF;color:var(--tt-primary);}
+.tt-404-back-btn:hover {background:#EAF7F0;color:var(--tt-primary);transform:translateY(-3px);box-shadow:0 8px 20px rgba(22,134,90,0.1);}
+.tt-404-home-btn {background:var(--tt-gradient);color:#FFFFFF;}
+.tt-404-home-btn:hover {background:var(--tt-primary-dark);color:#FFFFFF;transform:translateY(-3px);box-shadow:0 8px 20px rgba(22,134,90,0.2);}
+.tt-404-actions i {font-size:16px;}
+/*--- Support ---*/
+.tt-404-support {display:flex;align-items:center;justify-content:center;gap:8px;margin-top:35px;color:var(--tt-muted);font-size:11px;}
+.tt-404-support i {color:var(--tt-primary);font-size:15px;}
+/*--- Footer ---*/
+.tt-404-footer {position:relative;z-index:2;width:100%;padding-top:20px;text-align:center;color:var(--tt-muted);font-size:11px;}
+/*--- Animations ---*/
+@keyframes tt404Float {0%,100% {transform:translateY(0);}50% {transform:translateY(-9px);}}
+@keyframes tt404CenterFloat {0%,100% {transform:translateY(0) rotate(0);}50% {transform:translateY(-7px) rotate(3deg);}}
+/*--- Responsive 767px ---*/
+@media(max-width:767px) {
+.tt-404-page {padding:25px 18px 20px;}
+.tt-404-illustration {height:190px;gap:12px;}
+.tt-404-center {width:95px;height:95px;border-radius:29px;}
+.tt-404-icon-circle {width:66px;height:66px;border-radius:21px;}
+.tt-404-icon-circle i {font-size:31px;}
+.tt-404-floating-one {left:12%;}
+.tt-404-floating-two {right:12%;}
+.tt-404-floating-three {right:8%;bottom:0;}
+.tt-404-support {margin-top:27px;text-align:center;}
+}
+/*--- Responsive 575px ---*/
+@media(max-width:575px) {
+.tt-404-brand img {width:135px;height:48px;}
+.tt-404-illustration {height:155px;gap:8px;margin-bottom:15px;}
+.tt-404-number {font-size:clamp(85px,23vw,125px);letter-spacing:-7px;}
+.tt-404-center {width:76px;height:76px;border-radius:23px;}
+.tt-404-icon-circle {width:54px;height:54px;border-radius:17px;}
+.tt-404-icon-circle i {font-size:25px;}
+.tt-404-floating-icon {width:32px;height:32px;border-radius:10px;}
+.tt-404-floating-icon i {font-size:14px;}
+.tt-404-floating-one {top:0;left:8%;}
+.tt-404-floating-two {top:0;right:8%;}
+.tt-404-floating-three {right:5%;bottom:-3px;}
+.tt-404-content h1 {font-size:27px;}
+.tt-404-content p {font-size:12px;line-height:1.8;}
+.tt-404-actions {width:100%;gap:10px;margin-top:25px;}
+.tt-404-back-btn,.tt-404-home-btn {min-width:0;flex:1;min-height:46px;padding:0 12px;font-size:12px;}
+.tt-404-support {font-size:10px;}
+}

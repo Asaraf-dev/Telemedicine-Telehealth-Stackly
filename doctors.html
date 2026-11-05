@@ -1,0 +1,542 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctors | Telemedicine & Telehealth</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Main favicon -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- webp favicons -->
+    <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+    <!-- Android -->
+    <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--- Bootstrap Icon --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!--- Loader Start --->
+    <div class="tt-ldr-loader" id="ttLdrLoader" aria-label="Loading page" role="status">
+        <div class="tt-ldr-background">
+            <span class="tt-ldr-orb tt-ldr-orb-one"></span>
+            <span class="tt-ldr-orb tt-ldr-orb-two"></span>
+            <span class="tt-ldr-orb tt-ldr-orb-three"></span>
+        </div>
+        <div class="tt-ldr-content">
+            <!--- Loader Logo --->
+            <div class="tt-ldr-logo-wrap">
+                <div class="tt-ldr-logo-ring"></div>
+                <div class="tt-ldr-logo">
+                    <i class="bi bi-heart-pulse-fill"></i>
+                </div>
+                <span class="tt-ldr-pulse tt-ldr-pulse-one"></span>
+                <span class="tt-ldr-pulse tt-ldr-pulse-two"></span>
+            </div>
+            <!--- Brand Name --->
+            <div class="tt-ldr-brand">
+                <span class="tt-ldr-brand-name">STACKLY</span>
+                <span class="tt-ldr-brand-tagline">TELEMEDICINE & HEALTHCARE</span>
+            </div>
+            <!--- Loading Animation --->
+            <div class="tt-ldr-animation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!--- Loading Message --->
+            <p class="tt-ldr-message" id="ttLdrMessage">Preparing your healthcare experience...</p>
+        </div>
+        <div class="tt-ldr-bottom">
+            <i class="bi bi-shield-check"></i>
+            <span>Your healthcare journey starts here</span>
+        </div>
+    </div>
+    <!--- Loader End --->
+
+    <div id="navbar"></div>
+
+    <!--- Inner Hero Component --->
+    <div id="innerHeroContainer"></div>
+
+    <!--- Browse by Specialty Section Start --->
+    <section class="tt-doctors-specialties" id="specialties">
+        <div class="container">
+
+            <!--- Section Heading --->
+            <div class="tt-doctors-specialties-heading">
+                <div class="tt-doctors-specialties-heading-content">
+                    <span class="tt-doctors-specialties-tag">
+                        <i class="bi bi-heart-pulse"></i>
+                        MEDICAL SPECIALTIES
+                    </span>
+                    <h2 class="tt-doctors-specialties-title">
+                        Explore Care by <span>Specialty.</span>
+                    </h2>
+                    <p class="tt-doctors-specialties-description">
+                        Find healthcare professionals across different medical specialties. Explore the area of care
+                        that best matches your healthcare needs.
+                    </p>
+                </div>
+                <a href="404.html" class="tt-doctors-specialties-view-all">
+                    View All Doctors
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
+
+            <!--- Specialty Cards --->
+            <div class="row g-4">
+
+                <!--- General Medicine --->
+                <div class="col-lg-3 col-md-6">
+                    <a class="tt-doctors-specialty-card">
+                        <div class="tt-doctors-specialty-card-top">
+                            <div class="tt-doctors-specialty-icon">
+                                <i class="bi bi-heart-pulse"></i>
+                            </div>
+                            <span class="tt-doctors-specialty-number">01</span>
+                        </div>
+                        <h4>General Medicine</h4>
+                        <p>Everyday healthcare, general health concerns and preventive care.</p>
+                        <div class="tt-doctors-specialty-link">
+                            <span>Explore Doctors</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <!--- Cardiology --->
+                <div class="col-lg-3 col-md-6">
+                    <a class="tt-doctors-specialty-card">
+                        <div class="tt-doctors-specialty-card-top">
+                            <div class="tt-doctors-specialty-icon">
+                                <i class="bi bi-activity"></i>
+                            </div>
+                            <span class="tt-doctors-specialty-number">02</span>
+                        </div>
+                        <h4>Cardiology</h4>
+                        <p>Specialized care focused on heart health and cardiovascular conditions.</p>
+                        <div class="tt-doctors-specialty-link">
+                            <span>Explore Doctors</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <!--- Dermatology --->
+                <div class="col-lg-3 col-md-6">
+                    <a class="tt-doctors-specialty-card">
+                        <div class="tt-doctors-specialty-card-top">
+                            <div class="tt-doctors-specialty-icon">
+                                <i class="bi bi-person-hearts"></i>
+                            </div>
+                            <span class="tt-doctors-specialty-number">03</span>
+                        </div>
+                        <h4>Dermatology</h4>
+                        <p>Medical care for skin, hair and nail health and related concerns.</p>
+                        <div class="tt-doctors-specialty-link">
+                            <span>Explore Doctors</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <!--- Pediatrics --->
+                <div class="col-lg-3 col-md-6">
+                    <a class="tt-doctors-specialty-card">
+                        <div class="tt-doctors-specialty-card-top">
+                            <div class="tt-doctors-specialty-icon">
+                                <i class="bi bi-balloon-heart"></i>
+                            </div>
+                            <span class="tt-doctors-specialty-number">04</span>
+                        </div>
+                        <h4>Pediatrics</h4>
+                        <p>Healthcare focused on the growth, development and wellbeing of children.</p>
+                        <div class="tt-doctors-specialty-link">
+                            <span>Explore Doctors</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <!--- Neurology --->
+                <div class="col-lg-3 col-md-6">
+                    <a class="tt-doctors-specialty-card">
+                        <div class="tt-doctors-specialty-card-top">
+                            <div class="tt-doctors-specialty-icon">
+                                <i class="bi bi-brain"></i>
+                            </div>
+                            <span class="tt-doctors-specialty-number">05</span>
+                        </div>
+                        <h4>Neurology</h4>
+                        <p>Specialized attention for the brain, nervous system and neurological health.</p>
+                        <div class="tt-doctors-specialty-link">
+                            <span>Explore Doctors</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <!--- Orthopedics --->
+                <div class="col-lg-3 col-md-6">
+                    <a class="tt-doctors-specialty-card">
+                        <div class="tt-doctors-specialty-card-top">
+                            <div class="tt-doctors-specialty-icon">
+                                <i class="bi bi-bandaid"></i>
+                            </div>
+                            <span class="tt-doctors-specialty-number">06</span>
+                        </div>
+                        <h4>Orthopedics</h4>
+                        <p>Care related to bones, joints, muscles and mobility.</p>
+                        <div class="tt-doctors-specialty-link">
+                            <span>Explore Doctors</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <!--- Gynecology --->
+                <div class="col-lg-3 col-md-6">
+                    <a class="tt-doctors-specialty-card">
+                        <div class="tt-doctors-specialty-card-top">
+                            <div class="tt-doctors-specialty-icon">
+                                <i class="bi bi-gender-female"></i>
+                            </div>
+                            <span class="tt-doctors-specialty-number">07</span>
+                        </div>
+                        <h4>Gynecology</h4>
+                        <p>Women's reproductive health and related medical care.</p>
+                        <div class="tt-doctors-specialty-link">
+                            <span>Explore Doctors</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <!--- Dentistry --->
+                <div class="col-lg-3 col-md-6">
+                    <a class="tt-doctors-specialty-card">
+                        <div class="tt-doctors-specialty-card-top">
+                            <div class="tt-doctors-specialty-icon">
+                                <i class="bi bi-emoji-smile"></i>
+                            </div>
+                            <span class="tt-doctors-specialty-number">08</span>
+                        </div>
+                        <h4>Dentistry</h4>
+                        <p>Oral healthcare, dental wellness and treatment-related concerns.</p>
+                        <div class="tt-doctors-specialty-link">
+                            <span>Explore Doctors</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <!--- Specialty Bottom Note --->
+            <div class="tt-doctors-specialties-bottom">
+                <div class="tt-doctors-specialties-bottom-icon">
+                    <i class="bi bi-info-circle"></i>
+                </div>
+                <p>Looking for a particular healthcare professional? Explore our doctor directory to discover available
+                    specialties.</p>
+                <a href="404.html">Find a Doctor <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </section>
+    <!--- Browse by Specialty Section End --->
+
+    <!--- Featured Doctors Section Start --->
+    <section class="tt-doctors-featured" id="featured-doctors">
+        <div class="container">
+
+            <!--- Section Heading --->
+            <div class="tt-doctors-featured-heading">
+                <div class="tt-doctors-featured-heading-content">
+                    <span class="tt-doctors-featured-tag">
+                        <i class="bi bi-person-badge"></i>
+                        MEET OUR DOCTORS
+                    </span>
+                    <h2 class="tt-doctors-featured-title">
+                        Meet Our Featured <span>Doctors.</span>
+                    </h2>
+                    <p class="tt-doctors-featured-description">
+                        Explore healthcare professional profiles and discover specialists across different medical
+                        fields.
+                    </p>
+                </div>
+                <a href="404.html" class="tt-doctors-featured-view-all">
+                    View All Doctors
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
+
+            <!--- Featured Doctor Cards --->
+            <div class="row g-4">
+
+                <!--- Doctor Card 1 --->
+                <div class="col-lg-3 col-md-6">
+                    <div class="tt-doctors-featured-card">
+                        <div class="tt-doctors-featured-image">
+                            <img src="assets/images/team-1.webp" alt="Sample doctor profile" loading="lazy">
+                            <span class="tt-doctors-featured-specialty">General Medicine</span>
+
+                        </div>
+                        <div class="tt-doctors-featured-info">
+                            <div class="tt-doctors-featured-meta">
+                                <span><i class="bi bi-briefcase"></i> 6+ Experience</span>
+                            </div>
+                            <h4>Dr. Alex Morgan</h4>
+                            <p class="tt-doctors-featured-qualification">General Physician</p>
+                            <div class="tt-doctors-featured-divider"></div>
+                            <div class="tt-doctors-featured-bottom">
+                                <span><i class="bi bi-camera-video"></i> Consultation options</span>
+                                <a href="404.html" aria-label="View Dr. Alex Morgan profile">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Doctor Card 2 --->
+                <div class="col-lg-3 col-md-6">
+                    <div class="tt-doctors-featured-card">
+                        <div class="tt-doctors-featured-image">
+                            <img src="assets/images/team-4.webp" alt="Sample doctor profile" loading="lazy">
+                            <span class="tt-doctors-featured-specialty">Cardiology</span>
+
+                        </div>
+                        <div class="tt-doctors-featured-info">
+                            <div class="tt-doctors-featured-meta">
+                                <span><i class="bi bi-briefcase"></i> 9+ Experience</span>
+                            </div>
+                            <h4>Dr. Sophia Williams</h4>
+                            <p class="tt-doctors-featured-qualification">Cardiology Specialist</p>
+                            <div class="tt-doctors-featured-divider"></div>
+                            <div class="tt-doctors-featured-bottom">
+                                <span><i class="bi bi-camera-video"></i> Consultation options</span>
+                                <a href="404.html" aria-label="View Dr. Sophia Williams profile">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Doctor Card 3 --->
+                <div class="col-lg-3 col-md-6">
+                    <div class="tt-doctors-featured-card">
+                        <div class="tt-doctors-featured-image">
+                            <img src="assets/images/team-3.webp" alt="Sample doctor profile" loading="lazy">
+                            <span class="tt-doctors-featured-specialty">Dermatology</span>
+
+                        </div>
+                        <div class="tt-doctors-featured-info">
+                            <div class="tt-doctors-featured-meta">
+                                <span><i class="bi bi-briefcase"></i> 6+ Experience</span>
+                            </div>
+                            <h4>Dr. Daniel Carter</h4>
+                            <p class="tt-doctors-featured-qualification">Dermatology Specialist</p>
+                            <div class="tt-doctors-featured-divider"></div>
+                            <div class="tt-doctors-featured-bottom">
+                                <span><i class="bi bi-camera-video"></i> Consultation options</span>
+                                <a href="404.html" aria-label="View Dr. Daniel Carter profile">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Doctor Card 4 --->
+                <div class="col-lg-3 col-md-6">
+                    <div class="tt-doctors-featured-card">
+                        <div class="tt-doctors-featured-image">
+                            <img src="assets/images/team-6.webp" alt="Sample doctor profile" loading="lazy">
+                            <span class="tt-doctors-featured-specialty">Pediatrics</span>
+
+                        </div>
+                        <div class="tt-doctors-featured-info">
+                            <div class="tt-doctors-featured-meta">
+                                <span><i class="bi bi-briefcase"></i> 5+ Experience</span>
+                            </div>
+                            <h4>Dr. Olivia Bennett</h4>
+                            <p class="tt-doctors-featured-qualification">Pediatric Specialist</p>
+                            <div class="tt-doctors-featured-divider"></div>
+                            <div class="tt-doctors-featured-bottom">
+                                <span><i class="bi bi-camera-video"></i> Consultation options</span>
+                                <a href="404.html" aria-label="View Dr. Olivia Bennett profile">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--- Featured Doctors Bottom CTA --->
+            <div class="tt-doctors-featured-bottom-cta">
+                <p>Looking for a particular specialist?</p>
+                <a href="404.html">
+                    Explore Our Doctor Directory
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!--- Featured Doctors Section End --->
+
+    <!--- All Doctors Directory Section Start --->
+<section class="tt-doctors-directory" id="all-doctors">
+    <div class="container">
+        <div class="tt-doctors-directory-header">
+            <div class="tt-doctors-directory-heading">
+                <span class="tt-doctors-directory-eyebrow">OUR DOCTOR DIRECTORY</span>
+                <h2>Find the Right Doctor for <span>Your Needs.</span></h2>
+                <p>Explore healthcare professionals by specialty, experience and consultation preference.</p>
+            </div>
+            <div class="tt-doctors-directory-count">
+                <strong id="ttDoctorsResultCount">0</strong>
+                <span>Doctors Found</span>
+            </div>
+        </div>
+
+        <!--- Search and Filter Panel --->
+        <div class="tt-doctors-directory-filter">
+            <div class="tt-doctors-directory-search">
+                <i class="bi bi-search"></i>
+                <input type="search" id="ttDoctorSearch" placeholder="Search by doctor name..." aria-label="Search by doctor name">
+                <button type="button" id="ttDoctorSearchClear" aria-label="Clear search">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <div class="tt-doctors-directory-filter-grid">
+                <div class="tt-doctors-directory-field">
+                    <label for="ttDoctorSpecialty">Specialty</label>
+                    <select id="ttDoctorSpecialty">
+                        <option value="all">All Specialties</option>
+                        <option value="General Medicine">General Medicine</option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Dermatology">Dermatology</option>
+                        <option value="Pediatrics">Pediatrics</option>
+                        <option value="Neurology">Neurology</option>
+                        <option value="Orthopedics">Orthopedics</option>
+                        <option value="Gynecology">Gynecology</option>
+                        <option value="Dentistry">Dentistry</option>
+                    </select>
+                </div>
+
+                <div class="tt-doctors-directory-field">
+                    <label for="ttDoctorExperience">Experience</label>
+                    <select id="ttDoctorExperience">
+                        <option value="all">Any Experience</option>
+                        <option value="0-5">0–5 Years</option>
+                        <option value="6-10">6–10 Years</option>
+                        <option value="11-15">11–15 Years</option>
+                        <option value="16+">16+ Years</option>
+                    </select>
+                </div>
+
+                <div class="tt-doctors-directory-field">
+                    <label for="ttDoctorConsultation">Consultation Type</label>
+                    <select id="ttDoctorConsultation">
+                        <option value="all">All Types</option>
+                        <option value="Online">Online</option>
+                        <option value="In-person">In-person</option>
+                        <option value="Both">Both</option>
+                    </select>
+                </div>
+
+                <div class="tt-doctors-directory-field">
+                    <label for="ttDoctorSort">Sort By</label>
+                    <select id="ttDoctorSort">
+                        <option value="name-asc">Name: A to Z</option>
+                        <option value="name-desc">Name: Z to A</option>
+                        <option value="experience-desc">Experience: High to Low</option>
+                        <option value="experience-asc">Experience: Low to High</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="tt-doctors-directory-filter-bottom">
+                <span><i class="bi bi-sliders"></i> Refine your search</span>
+                <button type="button" id="ttDoctorReset">
+                    <i class="bi bi-arrow-counterclockwise"></i> Reset Filters
+                </button>
+            </div>
+        </div>
+
+        <!--- Doctor Cards --->
+        <div class="tt-doctors-directory-grid" id="ttDoctorsDirectoryGrid" aria-live="polite"></div>
+
+        <!--- No Results --->
+        <div class="tt-doctors-directory-empty" id="ttDoctorsEmpty" hidden>
+            <div class="tt-doctors-directory-empty-icon">
+                <i class="bi bi-person-exclamation"></i>
+            </div>
+            <h3>No Doctors Found</h3>
+            <p>We couldn't find doctors matching your selected filters. Try adjusting your search.</p>
+            <button type="button" id="ttDoctorEmptyReset">Clear All Filters</button>
+        </div>
+
+        <div class="tt-doctors-directory-note">
+            <i class="bi bi-info-circle"></i>
+            <span>Doctor profiles and details shown here are sample data for the website prototype.</span>
+        </div>
+    </div>
+</section>
+    <!--- All Doctors Directory Section End --->
+
+    <div id="footer"></div>
+
+    <!--- Js Files --->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/footer.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/doctors.js"></script>
+    <script src="assets/js/inner-hero.js"></script>
+
+</body>
+
+</html>

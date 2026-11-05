@@ -1,0 +1,658 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Telemedicine & Telehealth</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Main favicon -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- webp favicons -->
+    <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+    <!-- Android -->
+    <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--- Bootstrap Icon --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!--- Loader Start --->
+    <div class="tt-ldr-loader" id="ttLdrLoader" aria-label="Loading page" role="status">
+        <div class="tt-ldr-background">
+            <span class="tt-ldr-orb tt-ldr-orb-one"></span>
+            <span class="tt-ldr-orb tt-ldr-orb-two"></span>
+            <span class="tt-ldr-orb tt-ldr-orb-three"></span>
+        </div>
+        <div class="tt-ldr-content">
+            <!--- Loader Logo --->
+            <div class="tt-ldr-logo-wrap">
+                <div class="tt-ldr-logo-ring"></div>
+                <div class="tt-ldr-logo">
+                    <i class="bi bi-heart-pulse-fill"></i>
+                </div>
+                <span class="tt-ldr-pulse tt-ldr-pulse-one"></span>
+                <span class="tt-ldr-pulse tt-ldr-pulse-two"></span>
+            </div>
+            <!--- Brand Name --->
+            <div class="tt-ldr-brand">
+                <span class="tt-ldr-brand-name">STACKLY</span>
+                <span class="tt-ldr-brand-tagline">TELEMEDICINE & HEALTHCARE</span>
+            </div>
+            <!--- Loading Animation --->
+            <div class="tt-ldr-animation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!--- Loading Message --->
+            <p class="tt-ldr-message" id="ttLdrMessage">Preparing your healthcare experience...</p>
+        </div>
+        <div class="tt-ldr-bottom">
+            <i class="bi bi-shield-check"></i>
+            <span>Your healthcare journey starts here</span>
+        </div>
+    </div>
+    <!--- Loader End --->
+
+    <div id="navbar"></div>
+
+    <!--- Inner Hero Component --->
+    <div id="innerHeroContainer"></div>
+
+    <!--- Our Healthcare Services Section Start --->
+
+    <!--- Our Healthcare Services Section --->
+    <section class="tt-services-overview" id="services-list">
+        <div class="container">
+
+            <!--- Section Heading --->
+            <div class="tt-services-overview-heading">
+                <span class="tt-services-overview-tag">
+                    <i class="bi bi-grid"></i>
+                    OUR HEALTHCARE SERVICES
+                </span>
+                <h2>Healthcare Support for <span>Every Step of Your Journey.</span></h2>
+                <p>Explore digital healthcare features designed to make finding information, managing appointments and
+                    navigating your healthcare journey simpler.</p>
+            </div>
+
+            <!--- Services Grid --->
+            <div class="row g-4">
+
+                <!--- Service 01 --->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tt-services-overview-card">
+                        <div class="tt-services-overview-card-top">
+                            <div class="tt-services-overview-icon">
+                                <i class="bi bi-camera-video"></i>
+                            </div>
+                            <span>01</span>
+                        </div>
+                        <h3>Online Consultations</h3>
+                        <p>Explore convenient digital consultation experiences that help connect users with healthcare
+                            professionals remotely.</p>
+                        <a href="404.html" class="tt-services-overview-link">
+                            Explore Service <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <div class="tt-services-overview-decoration">
+                            <i class="bi bi-camera-video"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Service 02 --->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tt-services-overview-card">
+                        <div class="tt-services-overview-card-top">
+                            <div class="tt-services-overview-icon">
+                                <i class="bi bi-calendar2-check"></i>
+                            </div>
+                            <span>02</span>
+                        </div>
+                        <h3>Appointment Booking</h3>
+                        <p>Make appointment discovery and scheduling easier with an organised digital booking
+                            experience.</p>
+                        <a href="404.html" class="tt-services-overview-link">
+                            Explore Service <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <div class="tt-services-overview-decoration">
+                            <i class="bi bi-calendar2-check"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Service 03 --->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tt-services-overview-card">
+                        <div class="tt-services-overview-card-top">
+                            <div class="tt-services-overview-icon">
+                                <i class="bi bi-person-vcard"></i>
+                            </div>
+                            <span>03</span>
+                        </div>
+                        <h3>Doctor Discovery</h3>
+                        <p>Explore healthcare professionals, browse medical specialties and find relevant provider
+                            information.</p>
+                        <a href="404.html" class="tt-services-overview-link">
+                            Explore Service <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <div class="tt-services-overview-decoration">
+                            <i class="bi bi-person-vcard"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Service 04 --->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tt-services-overview-card">
+                        <div class="tt-services-overview-card-top">
+                            <div class="tt-services-overview-icon">
+                                <i class="bi bi-file-medical"></i>
+                            </div>
+                            <span>04</span>
+                        </div>
+                        <h3>Digital Health Records</h3>
+                        <p>Keep important health information organised in one convenient digital space for easier
+                            reference.</p>
+                        <a href="404.html" class="tt-services-overview-link">
+                            Explore Service <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <div class="tt-services-overview-decoration">
+                            <i class="bi bi-file-medical"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Service 05 --->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tt-services-overview-card">
+                        <div class="tt-services-overview-card-top">
+                            <div class="tt-services-overview-icon">
+                                <i class="bi bi-prescription2"></i>
+                            </div>
+                            <span>05</span>
+                        </div>
+                        <h3>Prescription Management</h3>
+                        <p>Organise prescription-related information and make important medication details easier to
+                            access.</p>
+                        <a href="404.html" class="tt-services-overview-link">
+                            Explore Service <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <div class="tt-services-overview-decoration">
+                            <i class="bi bi-prescription2"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Service 06 --->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tt-services-overview-card">
+                        <div class="tt-services-overview-card-top">
+                            <div class="tt-services-overview-icon">
+                                <i class="bi bi-bell"></i>
+                            </div>
+                            <span>06</span>
+                        </div>
+                        <h3>Health Reminders</h3>
+                        <p>Stay organised with helpful reminders for appointments and other personal healthcare
+                            activities.</p>
+                        <a href="404.html" class="tt-services-overview-link">
+                            Explore Service <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <div class="tt-services-overview-decoration">
+                            <i class="bi bi-bell"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Service 07 --->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tt-services-overview-card">
+                        <div class="tt-services-overview-card-top">
+                            <div class="tt-services-overview-icon">
+                                <i class="bi bi-heart-pulse"></i>
+                            </div>
+                            <span>07</span>
+                        </div>
+                        <h3>Health Monitoring</h3>
+                        <p>Explore ways to organise personal health measurements and follow health-related information
+                            over time.</p>
+                        <a href="404.html" class="tt-services-overview-link">
+                            Explore Service <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <div class="tt-services-overview-decoration">
+                            <i class="bi bi-heart-pulse"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Service 08 --->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tt-services-overview-card">
+                        <div class="tt-services-overview-card-top">
+                            <div class="tt-services-overview-icon">
+                                <i class="bi bi-chat-dots"></i>
+                            </div>
+                            <span>08</span>
+                        </div>
+                        <h3>Patient Communication</h3>
+                        <p>Support a more connected healthcare experience through convenient digital communication
+                            features.</p>
+                        <a href="404.html" class="tt-services-overview-link">
+                            Explore Service <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <div class="tt-services-overview-decoration">
+                            <i class="bi bi-chat-dots"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Service 09 --->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tt-services-overview-card">
+                        <div class="tt-services-overview-card-top">
+                            <div class="tt-services-overview-icon">
+                                <i class="bi bi-clipboard2-pulse"></i>
+                            </div>
+                            <span>09</span>
+                        </div>
+                        <h3>Health Information Hub</h3>
+                        <p>Discover organised healthcare information and helpful resources to support informed
+                            conversations and decisions.</p>
+                        <a href="404.html" class="tt-services-overview-link">
+                            Explore Service <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <div class="tt-services-overview-decoration">
+                            <i class="bi bi-clipboard2-pulse"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--- Bottom Note --->
+            <div class="tt-services-overview-bottom">
+                <div class="tt-services-overview-bottom-icon">
+                    <i class="bi bi-info-circle"></i>
+                </div>
+                <p>Explore a more organised and convenient approach to your digital healthcare journey with Stackly.</p>
+                <a href="404.html">Get in Touch <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </section>
+    <!--- Our Healthcare Services Section End --->
+
+    <!--- Online Consultation Experience Section Start --->
+    <section class="tt-services-consultation" id="online-consultation">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!--- Consultation Content --->
+                <div class="col-lg-6">
+                    <div class="tt-services-consultation-content">
+                        <span class="tt-services-consultation-tag">
+                            <i class="bi bi-camera-video"></i>
+                            ONLINE CONSULTATION
+                        </span>
+                        <h2 class="tt-services-consultation-title">
+                            Healthcare Conversations,
+                            <span>Made More Convenient.</span>
+                        </h2>
+                        <p class="tt-services-consultation-description">
+                            Connect with healthcare professionals through a convenient digital consultation experience.
+                            Explore a simpler way to discuss your health concerns without making every interaction a
+                            trip to a clinic.
+                        </p>
+
+                        <!--- Consultation Features --->
+                        <div class="tt-services-consultation-features">
+                            <div class="tt-services-consultation-feature">
+                                <div class="tt-services-consultation-feature-icon">
+                                    <i class="bi bi-camera-video"></i>
+                                </div>
+                                <div>
+                                    <h5>Virtual Consultations</h5>
+                                    <p>Explore face-to-face consultations through digital video experiences.</p>
+                                </div>
+                            </div>
+                            <div class="tt-services-consultation-feature">
+                                <div class="tt-services-consultation-feature-icon">
+                                    <i class="bi bi-calendar2-check"></i>
+                                </div>
+                                <div>
+                                    <h5>Flexible Scheduling</h5>
+                                    <p>Find convenient appointment times that fit your daily routine.</p>
+                                </div>
+                            </div>
+                            <div class="tt-services-consultation-feature">
+                                <div class="tt-services-consultation-feature-icon">
+                                    <i class="bi bi-chat-square-text"></i>
+                                </div>
+                                <div>
+                                    <h5>Clear Communication</h5>
+                                    <p>Discuss your concerns and share relevant health information.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--- Consultation CTA --->
+                        <a href="404.html" class="tt-services-consultation-btn">
+                            Explore Consultation
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--- Consultation Visual --->
+                <div class="col-lg-6">
+                    <div class="tt-services-consultation-visual">
+                        <div class="tt-services-consultation-glow"></div>
+
+                        <!--- Video Consultation Interface --->
+                        <div class="tt-services-consultation-window">
+                            <div class="tt-services-consultation-window-header">
+                                <div class="tt-services-consultation-window-brand">
+                                    <span class="tt-services-consultation-window-dot"></span>
+                                    Consultation Preview
+                                </div>
+                                <div class="tt-services-consultation-window-status">
+                                    <span></span> Online
+                                </div>
+                            </div>
+
+                            <div class="tt-services-consultation-video">
+                                <div class="tt-services-consultation-doctor-avatar">
+                                    <i class="bi bi-person-fill"></i>
+                                </div>
+                                <div class="tt-services-consultation-doctor-info">
+                                    <span>Healthcare Professional</span>
+                                    <strong>Virtual Consultation</strong>
+                                </div>
+                                <div class="tt-services-consultation-video-label">
+                                    <i class="bi bi-camera-video-fill"></i>
+                                    Video Preview
+                                </div>
+                            </div>
+
+                            <div class="tt-services-consultation-patient">
+                                <div class="tt-services-consultation-patient-avatar">
+                                    <i class="bi bi-person"></i>
+                                </div>
+                                <div>
+                                    <span>Patient</span>
+                                    <strong>Consultation Participant</strong>
+                                </div>
+                                <i class="bi bi-volume-up-fill"></i>
+                            </div>
+
+                            <div class="tt-services-consultation-controls">
+                                <span><i class="bi bi-mic-fill"></i></span>
+                                <span><i class="bi bi-camera-video-fill"></i></span>
+                                <span><i class="bi bi-chat-left-text"></i></span>
+                                <span class="tt-services-consultation-end">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!--- Floating Information Cards --->
+                        <div class="tt-services-consultation-float tt-services-consultation-float-one">
+                            <div class="tt-services-consultation-float-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <div>
+                                <strong>Patient Focused</strong>
+                                <span>Designed around convenience</span>
+                            </div>
+                        </div>
+
+                        <div class="tt-services-consultation-float tt-services-consultation-float-two">
+                            <div class="tt-services-consultation-float-icon">
+                                <i class="bi bi-clock-history"></i>
+                            </div>
+                            <div>
+                                <strong>Flexible Access</strong>
+                                <span>Plan around your schedule</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--- Online Consultation Experience Section End --->
+
+    <!--- Easy Appointment Management Section Start --->
+    <section class="tt-services-appointment" id="appointment-management">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!--- Appointment Visual --->
+                <div class="col-lg-6">
+                    <div class="tt-services-appointment-visual">
+                        <div class="tt-services-appointment-glow"></div>
+
+                        <!--- Appointment Dashboard Preview --->
+                        <div class="tt-services-appointment-dashboard">
+                            <div class="tt-services-appointment-dashboard-header">
+                                <div>
+                                    <span class="tt-services-appointment-label">APPOINTMENT OVERVIEW</span>
+                                    <h4>Your Schedule</h4>
+                                </div>
+                                <div class="tt-services-appointment-header-icon">
+                                    <i class="bi bi-calendar2-week"></i>
+                                </div>
+                            </div>
+
+                            <!--- Calendar Header --->
+                            <div class="tt-services-appointment-calendar-header">
+                                <div>
+                                    <span>November 2026</span>
+                                    <small>Choose your preferred date</small>
+                                </div>
+                                <div class="tt-services-appointment-calendar-arrows">
+                                    <button type="button" aria-label="Previous month">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </button>
+                                    <button type="button" aria-label="Next month">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!--- Calendar Days --->
+                            <div class="tt-services-appointment-calendar">
+                                <div class="tt-services-appointment-weekdays">
+                                    <span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span>
+                                </div>
+                                <div class="tt-services-appointment-dates">
+                                    <span class="tt-services-appointment-muted">26</span>
+                                    <span class="tt-services-appointment-muted">27</span>
+                                    <span class="tt-services-appointment-muted">28</span>
+                                    <span class="tt-services-appointment-muted">29</span>
+                                    <span class="tt-services-appointment-muted">30</span>
+                                    <span class="tt-services-appointment-muted">31</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                                    <span>6</span>
+                                    <span>7</span>
+                                    <span class="tt-services-appointment-selected">8</span>
+                                    <span>9</span>
+                                    <span>10</span>
+                                    <span>11</span>
+                                    <span>12</span>
+                                    <span>13</span>
+                                    <span>14</span>
+                                    <span>15</span>
+                                    <span>16</span>
+                                    <span>17</span>
+                                    <span>18</span>
+                                    <span>19</span>
+                                    <span>20</span>
+                                    <span>21</span>
+                                    <span>22</span>
+                                    <span>23</span>
+                                    <span>24</span>
+                                    <span>25</span>
+                                    <span>26</span>
+                                    <span>27</span>
+                                    <span>28</span>
+                                    <span>29</span>
+                                    <span>30</span>
+                                </div>
+                            </div>
+
+                            <!--- Available Time Slots --->
+                            <div class="tt-services-appointment-slots">
+                                <div class="tt-services-appointment-slots-heading">
+                                    <strong>Available Time Slots</strong>
+                                    <span>18 Nov</span>
+                                </div>
+                                <div class="tt-services-appointment-slot-list">
+                                    <span>09:00 AM</span>
+                                    <span class="tt-services-appointment-slot-active">10:30 AM</span>
+                                    <span>11:30 AM</span>
+                                    <span>02:00 PM</span>
+                                </div>
+                            </div>
+
+                            <!--- Appointment Confirmation Preview --->
+                            <div class="tt-services-appointment-confirmation">
+                                <div class="tt-services-appointment-confirmation-icon">
+                                    <i class="bi bi-calendar-check"></i>
+                                </div>
+                                <div>
+                                    <strong>Appointment Preview</strong>
+                                    <span>18 November · 10:30 AM</span>
+                                </div>
+                                <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                        </div>
+
+                        <!--- Floating Card --->
+                        <div class="tt-services-appointment-float">
+                            <div class="tt-services-appointment-float-icon">
+                                <i class="bi bi-check2-circle"></i>
+                            </div>
+                            <div>
+                                <strong>Simple Scheduling</strong>
+                                <span>Designed for convenience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Appointment Content --->
+                <div class="col-lg-6">
+                    <div class="tt-services-appointment-content">
+                        <span class="tt-services-appointment-tag">
+                            <i class="bi bi-calendar2-check"></i>
+                            EASY APPOINTMENT MANAGEMENT
+                        </span>
+
+                        <h2 class="tt-services-appointment-title">
+                            Your Healthcare,
+                            <span>On Your Schedule.</span>
+                        </h2>
+
+                        <p class="tt-services-appointment-description">
+                            Make managing healthcare appointments feel simpler. Explore a convenient booking experience
+                            that helps you find suitable dates, choose available time slots and keep track of your
+                            scheduled visits.
+                        </p>
+
+                        <!--- Appointment Features --->
+                        <div class="tt-services-appointment-features">
+                            <div class="tt-services-appointment-feature">
+                                <div class="tt-services-appointment-feature-icon">
+                                    <i class="bi bi-calendar3"></i>
+                                </div>
+                                <div>
+                                    <h5>Convenient Date Selection</h5>
+                                    <p>Explore appointment dates and choose a time that works for you.</p>
+                                </div>
+                            </div>
+
+                            <div class="tt-services-appointment-feature">
+                                <div class="tt-services-appointment-feature-icon">
+                                    <i class="bi bi-clock-history"></i>
+                                </div>
+                                <div>
+                                    <h5>Flexible Time Slots</h5>
+                                    <p>View available appointment slots and plan your visit with ease.</p>
+                                </div>
+                            </div>
+
+                            <div class="tt-services-appointment-feature">
+                                <div class="tt-services-appointment-feature-icon">
+                                    <i class="bi bi-journal-check"></i>
+                                </div>
+                                <div>
+                                    <h5>Appointment Tracking</h5>
+                                    <p>Keep your upcoming appointment details organised in one place.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--- Appointment CTA --->
+                        <a href="404.html" class="tt-services-appointment-btn">
+                            Explore Appointment Options
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--- Easy Appointment Management Section End --->
+
+    <div id="footer"></div>
+
+    <!--- Js Files --->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/footer.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/services.js"></script>
+    <script src="assets/js/inner-hero.js"></script>
+
+</body>
+
+</html>

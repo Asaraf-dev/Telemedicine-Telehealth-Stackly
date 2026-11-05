@@ -1,0 +1,70 @@
+
+<!--- NavBar --->
+<header class="tt-com-navbar">
+    <nav class="tt-com-navbar-wrapper">
+        <div class="tt-com-navbar-container">
+            <!--- Brand Logo --->
+            <a href="index.html" class="tt-com-navbar-brand">
+                <img src="assets/images/brand-logo.webp" alt="Stackly Telemedicine Logo" class="tt-com-navbar-logo">
+            </a>
+            <!--- Desktop Navigation --->
+            <div class="tt-com-navbar-menu">
+                <ul class="tt-com-navbar-links">
+                    <li><a href="index.html" class="tt-com-navbar-link">Home</a></li>
+                    <li><a href="about.html" class="tt-com-navbar-link">About</a></li>
+                    <li><a href="services.html" class="tt-com-navbar-link">Services</a></li>
+                    <li><a href="doctors.html" class="tt-com-navbar-link">Doctors</a></li>
+                    <li><a href="contact.html" class="tt-com-navbar-link">Contact</a></li>
+                </ul>
+            </div>
+            <!--- Navbar Actions --->
+            <div class="tt-com-navbar-actions">
+                <!--- Desktop Login --->
+                <a href="login.html" class="tt-com-navbar-login">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Login</span>
+                    <i class="bi bi-arrow-up-right tt-com-navbar-login-arrow"></i>
+                </a>
+                <!--- Mobile Toggle --->
+                <button class="tt-com-navbar-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#ttNavbarOffcanvas" aria-controls="ttNavbarOffcanvas" aria-label="Open navigation">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--- End NavBar --->
+
+<!--- Mobile Offcanvas --->
+<div class="offcanvas offcanvas-end tt-com-navbar-offcanvas" tabindex="-1" id="ttNavbarOffcanvas" aria-labelledby="ttNavbarOffcanvasLabel">
+    <!--- Mobile Header --->
+    <div class="tt-com-navbar-mobile-header">
+        <a href="index.html" class="tt-com-navbar-mobile-brand">
+            <img src="assets/images/brand-logo.webp" alt="Stackly Logo">
+        </a>
+        <button type="button" class="tt-com-navbar-mobile-close" data-bs-dismiss="offcanvas" aria-label="Close navigation">
+            <i class="bi bi-x-lg"></i>
+        </button>
+    </div>
+    <!--- Mobile Body --->
+    <div class="offcanvas-body tt-com-navbar-mobile-body">
+        <div class="tt-com-navbar-mobile-label">MENU</div>
+        <ul class="tt-com-navbar-mobile-links">
+            <li><a href="index.html" class="tt-com-navbar-mobile-link"><span>01</span>Home<i class="bi bi-arrow-up-right"></i></a></li>
+            <li><a href="about.html" class="tt-com-navbar-mobile-link"><span>02</span>About<i class="bi bi-arrow-up-right"></i></a></li>
+            <li><a href="services.html" class="tt-com-navbar-mobile-link"><span>03</span>Services<i class="bi bi-arrow-up-right"></i></a></li>
+            <li><a href="doctors.html" class="tt-com-navbar-mobile-link"><span>04</span>Doctors<i class="bi bi-arrow-up-right"></i></a></li>
+            <li><a href="contact.html" class="tt-com-navbar-mobile-link"><span>05</span>Contact<i class="bi bi-arrow-up-right"></i></a></li>
+        </ul>
+        <!--- Mobile Login --->
+        <div class="tt-com-navbar-mobile-bottom">
+            <p>Healthcare, just a click away.</p>
+            <a href="login.html" class="tt-com-navbar-mobile-login">
+                <span><i class="bi bi-person-circle"></i> Login to Your Account</span>
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<!--- End Mobile Offcanvas --->

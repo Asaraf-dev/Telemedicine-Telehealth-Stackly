@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Stackly</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body class="tt-dashboard-body">
+
+    <!--- Dashboard Layout --->
+    <div class="tt-dashboard-layout" id="ttDashboardLayout" data-dashboard-role="admin"
+        data-dashboard-title="Admin Dashboard">
+
+        <!--- Sidebar Overlay --->
+        <div class="tt-dashboard-overlay" id="ttDashboardOverlay"></div>
+
+        <!--- Sidebar --->
+        <aside class="tt-dashboard-sidebar" id="ttDashboardSidebar">
+
+            <!--- Sidebar Brand --->
+            <div class="tt-dashboard-sidebar-brand">
+                <a href="index.html">
+                    <img src="assets/images/brand-logo.webp" alt="Stackly">
+                </a>
+                <button type="button" class="tt-dashboard-sidebar-close" id="ttDashboardSidebarClose"
+                    aria-label="Close menu">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <!--- Mobile User Information --->
+            <div class="tt-dashboard-sidebar-user">
+                <div class="tt-dashboard-sidebar-avatar">
+                    <img src="assets/images/profile-1.webp" alt="Profile">
+                </div>
+                <div class="tt-dashboard-sidebar-user-details">
+                    <strong id="ttSidebarUserName">User</strong>
+                    <span id="ttSidebarUserEmail">Loading...</span>
+                </div>
+            </div>
+
+            <!--- Sidebar Navigation --->
+            <nav class="tt-dashboard-sidebar-nav" aria-label="Dashboard navigation">
+                <span class="tt-dashboard-nav-label">MAIN MENU</span>
+
+                <a href="admin-dashboard.html" class="tt-dashboard-nav-link" data-page="dashboard">
+                    <i class="bi bi-grid-1x2"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="admin-appointments.html" class="tt-dashboard-nav-link" data-page="appointments">
+                    <i class="bi bi-calendar2-check"></i>
+                    <span>Appointments</span>
+                </a>
+
+                <a href="admin-doctors.html" class="tt-dashboard-nav-link active" data-page="doctors">
+                    <i class="bi bi-person-vcard"></i>
+                    <span>Doctors</span>
+                </a>
+
+                <a href="admin-profile.html" class="tt-dashboard-nav-link" data-page="profile">
+                    <i class="bi bi-person-circle"></i>
+                    <span>My Profile</span>
+                </a>
+            </nav>
+
+            <!--- Sidebar Bottom --->
+            <div class="tt-dashboard-sidebar-bottom">
+                <div class="tt-dashboard-sidebar-help">
+                    <i class="bi bi-headset"></i>
+                    <div>
+                        <strong>Need Help?</strong>
+                        <span>We're here to assist you.</span>
+                    </div>
+                </div>
+                <button type="button" class="tt-dashboard-logout" id="ttDashboardLogout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <!--- Dashboard Main --->
+        <div class="tt-dashboard-main">
+
+            <!--- Topbar --->
+            <header class="tt-dashboard-topbar">
+
+                <div class="tt-dashboard-topbar-left">
+                    <button type="button" class="tt-dashboard-menu-toggle" id="ttDashboardMenuToggle"
+                        aria-label="Open navigation menu" aria-expanded="false">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="tt-dashboard-page-heading">
+                        <span class="tt-dashboard-page-eyebrow">STACKLY WORKSPACE</span>
+                        <h1 id="ttDashboardPageTitle">Admin Dashboard</h1>
+                    </div>
+                </div>
+
+                <div class="tt-dashboard-topbar-right">
+                    <div class="tt-dashboard-topbar-user">
+                        <span class="tt-dashboard-topbar-user-label">SIGNED IN AS</span>
+                        <strong id="ttTopbarUserEmail">Loading...</strong>
+                    </div>
+                    <button type="button" class="tt-dashboard-profile-button" aria-label="Open profile"
+                        onclick="window.location.href='admin-profile.html'">
+                        <img src="assets/images/profile-1.webp" alt="Profile">
+                    </button>
+                </div>
+            </header>
+
+            <!--- Dashboard Content --->
+            <main class="tt-dashboard-content">
+
+
+                <!--- Admin Doctors --->
+                <section class="tt-admin-doctors">
+
+                    <!--- Page Heading --->
+                    <div class="tt-admin-doctors-heading">
+                        <div>
+                            <span class="tt-admin-doctors-eyebrow">DOCTOR MANAGEMENT</span>
+                            <h2>Doctors</h2>
+                            <p>Manage healthcare professionals and their profiles.</p>
+                        </div>
+                        <a href="404.html" class="tt-admin-doctors-primary-btn">
+                            <i class="bi bi-plus-lg"></i>
+                            <span>Add New Doctor</span>
+                        </a>
+                    </div>
+
+                    <!--- Doctor Statistics --->
+                    <div class="tt-admin-doctors-stats">
+                        <article class="tt-admin-doctors-stat">
+                            <div class="tt-admin-doctors-stat-icon tt-ad-stat-green">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <div>
+                                <span>Total Doctors</span>
+                                <h3>48</h3>
+                                <small>Registered professionals</small>
+                            </div>
+                        </article>
+                        <article class="tt-admin-doctors-stat">
+                            <div class="tt-admin-doctors-stat-icon tt-ad-stat-blue">
+                                <i class="bi bi-person-check"></i>
+                            </div>
+                            <div>
+                                <span>Available</span>
+                                <h3>36</h3>
+                                <small>Currently available</small>
+                            </div>
+                        </article>
+                        <article class="tt-admin-doctors-stat">
+                            <div class="tt-admin-doctors-stat-icon tt-ad-stat-orange">
+                                <i class="bi bi-person-dash"></i>
+                            </div>
+                            <div>
+                                <span>Unavailable</span>
+                                <h3>08</h3>
+                                <small>Not accepting appointments</small>
+                            </div>
+                        </article>
+                        <article class="tt-admin-doctors-stat">
+                            <div class="tt-admin-doctors-stat-icon tt-ad-stat-purple">
+                                <i class="bi bi-clipboard2-pulse"></i>
+                            </div>
+                            <div>
+                                <span>Specialties</span>
+                                <h3>12</h3>
+                                <small>Medical departments</small>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!--- Doctors Directory --->
+                    <section class="tt-admin-doctors-panel">
+
+                        <!--- Directory Header --->
+                        <div class="tt-admin-doctors-panel-header">
+                            <div>
+                                <span class="tt-admin-doctors-eyebrow">TEAM DIRECTORY</span>
+                                <h3>All Doctors</h3>
+                                <p>Browse registered healthcare professionals.</p>
+                            </div>
+                            <a href="404.html" class="tt-admin-doctors-export-btn">
+                                <i class="bi bi-download"></i>
+                                <span>Export</span>
+                            </a>
+                        </div>
+
+                        <!--- Search and Filters --->
+                        <div class="tt-admin-doctors-toolbar">
+                            <div class="tt-admin-doctors-search">
+                                <i class="bi bi-search"></i>
+                                <input type="search" id="ttDoctorSearch" placeholder="Search doctor, email or ID..."
+                                    aria-label="Search doctors">
+                            </div>
+
+                            <div class="tt-admin-doctors-filters">
+                                <select id="ttDoctorSpecialtyFilter" aria-label="Filter by specialty">
+                                    <option value="all">All Specialties</option>
+                                    <option value="general medicine">General Medicine</option>
+                                    <option value="cardiology">Cardiology</option>
+                                    <option value="dermatology">Dermatology</option>
+                                    <option value="pediatrics">Pediatrics</option>
+                                    <option value="neurology">Neurology</option>
+                                    <option value="orthopedics">Orthopedics</option>
+                                    <option value="gynecology">Gynecology</option>
+                                    <option value="dentistry">Dentistry</option>
+                                </select>
+
+                                <select id="ttDoctorAvailabilityFilter" aria-label="Filter by availability">
+                                    <option value="all">All Availability</option>
+                                    <option value="available">Available</option>
+                                    <option value="unavailable">Unavailable</option>
+                                </select>
+
+                                <button type="button" id="ttDoctorReset" class="tt-admin-doctors-reset">
+                                    <i class="bi bi-arrow-counterclockwise"></i>
+                                    <span>Reset</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!--- Doctors Table --->
+                        <div class="tt-admin-doctors-table-wrap">
+                            <table class="tt-admin-doctors-table">
+                                <thead>
+                                    <tr>
+                                        <th>Doctor</th>
+                                        <th>Doctor ID</th>
+                                        <th>Specialty</th>
+                                        <th>Experience</th>
+                                        <th>Consultation</th>
+                                        <th>Availability</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="ttDoctorTableBody">
+
+                                    <tr data-specialty="general medicine" data-availability="available">
+                                        <td>
+                                            <div class="tt-ad-person">
+                                                <img src="assets/images/profile-1.webp" alt="Doctor profile">
+                                                <span><strong>Dr. Alex
+                                                        Morgan</strong><small>alex@example.com</small></span>
+                                            </div>
+                                        </td>
+                                        <td><strong class="tt-ad-id">DOC-1001</strong></td>
+                                        <td>General Medicine</td>
+                                        <td>8 Years</td>
+                                        <td>Online & In-person</td>
+                                        <td><span class="tt-ad-status tt-ad-available">Available</span></td>
+                                        <td><a href="404.html" class="tt-ad-action" aria-label="View Dr. Alex Morgan"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                    <tr data-specialty="cardiology" data-availability="available">
+                                        <td>
+                                            <div class="tt-ad-person">
+                                                <img src="assets/images/profile-2.webp" alt="Doctor profile">
+                                                <span><strong>Dr. Sophia
+                                                        Williams</strong><small>sophia@example.com</small></span>
+                                            </div>
+                                        </td>
+                                        <td><strong class="tt-ad-id">DOC-1002</strong></td>
+                                        <td>Cardiology</td>
+                                        <td>12 Years</td>
+                                        <td>Online</td>
+                                        <td><span class="tt-ad-status tt-ad-available">Available</span></td>
+                                        <td><a href="404.html" class="tt-ad-action"
+                                                aria-label="View Dr. Sophia Williams"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                    <tr data-specialty="dermatology" data-availability="unavailable">
+                                        <td>
+                                            <div class="tt-ad-person">
+                                                <img src="assets/images/profile-3.webp" alt="Doctor profile">
+                                                <span><strong>Dr. Daniel
+                                                        Carter</strong><small>daniel@example.com</small></span>
+                                            </div>
+                                        </td>
+                                        <td><strong class="tt-ad-id">DOC-1003</strong></td>
+                                        <td>Dermatology</td>
+                                        <td>6 Years</td>
+                                        <td>Online & In-person</td>
+                                        <td><span class="tt-ad-status tt-ad-unavailable">Unavailable</span></td>
+                                        <td><a href="404.html" class="tt-ad-action"
+                                                aria-label="View Dr. Daniel Carter"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                    <tr data-specialty="pediatrics" data-availability="available">
+                                        <td>
+                                            <div class="tt-ad-person">
+                                                <img src="assets/images/profile-4.webp" alt="Doctor profile">
+                                                <span><strong>Dr. Olivia
+                                                        Bennett</strong><small>olivia@example.com</small></span>
+                                            </div>
+                                        </td>
+                                        <td><strong class="tt-ad-id">DOC-1004</strong></td>
+                                        <td>Pediatrics</td>
+                                        <td>10 Years</td>
+                                        <td>Online</td>
+                                        <td><span class="tt-ad-status tt-ad-available">Available</span></td>
+                                        <td><a href="404.html" class="tt-ad-action"
+                                                aria-label="View Dr. Olivia Bennett"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                    <tr data-specialty="neurology" data-availability="available">
+                                        <td>
+                                            <div class="tt-ad-person">
+                                                <img src="assets/images/profile-5.webp" alt="Doctor profile">
+                                                <span><strong>Dr. Ethan
+                                                        Wilson</strong><small>ethan@example.com</small></span>
+                                            </div>
+                                        </td>
+                                        <td><strong class="tt-ad-id">DOC-1005</strong></td>
+                                        <td>Neurology</td>
+                                        <td>9 Years</td>
+                                        <td>In-person</td>
+                                        <td><span class="tt-ad-status tt-ad-available">Available</span></td>
+                                        <td><a href="404.html" class="tt-ad-action"
+                                                aria-label="View Dr. Ethan Wilson"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                    <tr data-specialty="orthopedics" data-availability="unavailable">
+                                        <td>
+                                            <div class="tt-ad-person">
+                                                <img src="assets/images/profile-6.webp" alt="Doctor profile">
+                                                <span><strong>Dr. Isabella
+                                                        Taylor</strong><small>isabella@example.com</small></span>
+                                            </div>
+                                        </td>
+                                        <td><strong class="tt-ad-id">DOC-1006</strong></td>
+                                        <td>Orthopedics</td>
+                                        <td>7 Years</td>
+                                        <td>Online & In-person</td>
+                                        <td><span class="tt-ad-status tt-ad-unavailable">Unavailable</span></td>
+                                        <td><a href="404.html" class="tt-ad-action"
+                                                aria-label="View Dr. Isabella Taylor"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                    <tr data-specialty="gynecology" data-availability="available">
+                                        <td>
+                                            <div class="tt-ad-person">
+                                                <img src="assets/images/profile-7.webp" alt="Doctor profile">
+                                                <span><strong>Dr. Mia
+                                                        Anderson</strong><small>mia@example.com</small></span>
+                                            </div>
+                                        </td>
+                                        <td><strong class="tt-ad-id">DOC-1007</strong></td>
+                                        <td>Gynecology</td>
+                                        <td>11 Years</td>
+                                        <td>Online</td>
+                                        <td><span class="tt-ad-status tt-ad-available">Available</span></td>
+                                        <td><a href="404.html" class="tt-ad-action"
+                                                aria-label="View Dr. Mia Anderson"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                    <tr data-specialty="dentistry" data-availability="available">
+                                        <td>
+                                            <div class="tt-ad-person">
+                                                <img src="assets/images/profile-8.webp" alt="Doctor profile">
+                                                <span><strong>Dr. Noah
+                                                        Thomas</strong><small>noah@example.com</small></span>
+                                            </div>
+                                        </td>
+                                        <td><strong class="tt-ad-id">DOC-1008</strong></td>
+                                        <td>Dentistry</td>
+                                        <td>5 Years</td>
+                                        <td>In-person</td>
+                                        <td><span class="tt-ad-status tt-ad-available">Available</span></td>
+                                        <td><a href="404.html" class="tt-ad-action" aria-label="View Dr. Noah Thomas"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <!--- Empty State --->
+                            <div class="tt-admin-doctors-empty" id="ttDoctorEmpty" hidden>
+                                <i class="bi bi-person-x"></i>
+                                <h4>No doctors found</h4>
+                                <p>Try another search or adjust your filters.</p>
+                            </div>
+                        </div>
+
+                        <!--- Table Footer --->
+                        <div class="tt-admin-doctors-table-footer">
+                            <span id="ttDoctorResultCount">Showing 8 doctors</span>
+                            <div class="tt-admin-doctors-pagination">
+                                <button type="button" id="ttDoctorPrev" disabled aria-label="Previous page">
+                                    <i class="bi bi-chevron-left"></i>
+                                </button>
+                                <span id="ttDoctorPageInfo">1 / 2</span>
+                                <button type="button" id="ttDoctorNext" aria-label="Next page">
+                                    <i class="bi bi-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!--- Directory Notice --->
+                    <div class="tt-admin-doctors-notice">
+                        <i class="bi bi-info-circle"></i>
+                        <p>Doctor profiles and statistics displayed here are illustrative sample data.</p>
+                    </div>
+
+                </section>
+                <!--- End Admin Doctors --->
+
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/admin-doctors.js"></script>
+</body>
+
+</html>
