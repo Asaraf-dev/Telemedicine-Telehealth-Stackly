@@ -116,7 +116,7 @@
 .tt-com-footer-highlight-icon {width: 40px;height: 40px;font-size: 18px;}
 .tt-com-footer-highlight div:nth-child(2) {flex-basis: calc(100% - 55px);}
 .tt-com-footer-highlight-link {margin-left: 52px;}
-.tt-com-footer-bottom {flex-direction: column;align-items: flex-start;gap: 12px;padding-right: 50px;}
+.tt-com-footer-bottom {flex-direction: column;align-items: center;gap: 12px;padding-right: 0px;}
 .tt-com-footer-bottom-links {gap: 9px;flex-wrap: wrap;}
 .tt-com-footer-bottom-links a,.tt-com-footer-copyright {font-size: 10px;}
 .tt-com-footer-top {width: 38px;height: 38px;}
